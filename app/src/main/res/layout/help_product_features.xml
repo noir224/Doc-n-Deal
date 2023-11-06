@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/acceptwr_dialog"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="30dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/dialog"
+            android:layout_width="505dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/blue">
+
+            <TextView
+                android:id="@+id/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Product Features"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="249dp"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <TextView
+                android:id="@+id/Text2"
+                android:layout_width="437dp"
+                android:layout_height="382dp"
+                android:layout_below="@id/Text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="List and briefly describe the product features. Features are the high-level capabilities of the system that are necessary to deliver benefits to the users. Each feature is an externally desired service that typically requires a series of inputs to achieve the desired result. For example, a feature of a problem tracking system might be the ability to provide trending reports. As the use-case model takes shape, update the description to refer to the use cases.
+Because the Vision document is reviewed by a wide variety of involved personnel, the level of detail should be general enough for everyone to understand. However, enough detail should be available to provide the team with the information they need to create a use-case model.
+To effectively manage application complexity, we recommend for any new system, or an increment to an existing system, capabilities are abstracted to a high enough level so 25-99 features result. These features provide the fundamental basis for product definition, scope management, and project management. Each feature will be expanded in greater detail in the use-case model.
+Throughout this section, each feature should be externally perceivable by users, operators or other external systems. These features should include a description of functionality and any relevant usability issues that must be addressed. Avoid design, i.e., Keep feature descriptions at a general level. Focus on capabilities needed and why, (not how)	 they should be implemented.
+"
+                android:textColor="@color/lightblue" />
+
+            <Button
+                android:id="@+id/okButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/Text2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/blue"
+                android:padding="1dp"
+                android:text="OK"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

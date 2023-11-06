@@ -1,0 +1,2533 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/vis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="350dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/armata"
+            android:gravity="center"
+            android:text="Vision Document"
+            android:textAlignment="center"
+            android:textColor="@color/semipurple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/visionFinish"
+            android:layout_width="75dp"
+            android:layout_height="77dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            app:srcCompat="@drawable/ic_baseline_close_24"
+            app:tint="@color/red" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="700dp"
+            android:fontFamily="@font/armata"
+            android:text="Document name"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/docNameVis"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:shadowColor="@color/blue"
+            android:text="Untitled"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/docNameVis"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Introduction:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="200dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView2"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Purpose:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/vpurpose"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Purpose"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="200dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/vpurpose"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Scope:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/vscope"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Scope"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="200dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/vscope"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Problem Statement:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView6"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="The problem of:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/vProblemOF"
+            android:layout_width="613dp"
+            android:layout_height="136dp"
+            android:layout_below="@+id/textView6"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView7"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint="Problem of"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/vProblemOF"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Affects:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/vAffects"
+            android:layout_width="613dp"
+            android:layout_height="136dp"
+            android:layout_below="@+id/vProblemOF"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView8"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint="Affects"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/vAffects"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="The impact of which is:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/vImpactOF"
+            android:layout_width="613dp"
+            android:layout_height="136dp"
+            android:layout_below="@+id/vAffects"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView9"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint="Impacts"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/vImpactOF"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="A successful solution would be:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/vSolution"
+            android:layout_width="613dp"
+            android:layout_height="136dp"
+            android:layout_below="@+id/vImpactOF"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView10"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint="Solution"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/vSolution"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Problem Decomposition:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ProblemDecompositionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/plusProblemDecomposition"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/ProblemDecompositionList"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/plusProblemDecomposition"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Positioning"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView12"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Business Opportunity"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/BusinessOpportunityList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/plusBusinessOpportunity"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/BusinessOpportunityList"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/plusBusinessOpportunity"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Product Position Statement"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="For:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/vFor"
+            android:layout_width="613dp"
+            android:layout_height="136dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView7"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint=""
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/vFor"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Who:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/vWho"
+            android:layout_width="613dp"
+            android:layout_height="136dp"
+            android:layout_below="@+id/vFor"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView8"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint=""
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/vWho"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="The "
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/vTheApp"
+            android:layout_width="613dp"
+            android:layout_height="136dp"
+            android:layout_below="@+id/vWho"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView9"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint=""
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/vTheApp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="That:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/vThat"
+            android:layout_width="613dp"
+            android:layout_height="136dp"
+            android:layout_below="@+id/vTheApp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView10"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint=""
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/vThat"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Unlike:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/vUnlike"
+            android:layout_width="613dp"
+            android:layout_height="136dp"
+            android:layout_below="@+id/vThat"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView10"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint=""
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/vUnlike"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Our Product:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/vOurProduct"
+            android:layout_width="613dp"
+            android:layout_height="136dp"
+            android:layout_below="@+id/vUnlike"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/textView10"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint=""
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/vOurProduct"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Stakeholder and User Descriptions:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView21"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="User Summary:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/UserList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView23"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"></LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/UserRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UserList"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/plusUser"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/UserRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/plusUser"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Stakeholder Summary:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/StakeholderList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView22"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"></LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/StakeholderRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StakeholderList"
+            android:layout_marginTop="5dp" />
+        <ImageView
+            android:id="@+id/plusStakeholder"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/StakeholderRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/plusStakeholder"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Key Stakeholder/User Needs:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/UserNeedsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView24"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/plusUserNeeds"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/UserNeedsList"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/plusUserNeeds"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Alternatives and Competition:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/AlternativeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView25"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/plusAlternative"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/AlternativeList"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/plusAlternative"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Product Perspective:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/proOver"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView26"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Overview"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/proOver"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Summary of Capabilities:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/CapabilitiesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView28"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/plusCapabilities"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/CapabilitiesList"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/plusCapabilities"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Assumptions and Dependencies:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/assumpList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView29"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/plusAssump"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/assumpList"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/plusAssump"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Product Features:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/pFeatureList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView30"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/pluspFeature"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/pFeatureList"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple"/>
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/pluspFeature"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Conclusion:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/con"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView31"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:hint="Conclusion"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="350dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/con"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Appendix 1 - Feature Attributes"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView32"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Priority"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView33"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Critical"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/pcritical"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView34"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/pcritical"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Important"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/pimportant"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView35"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/pimportant"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Useful"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/puseful"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView36"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/puseful"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Effort"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView37"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="High"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/ehigh"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView38"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/ehigh"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Medium"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emed"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView39"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/emed"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Low"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/elow"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView40"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/elow"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Risk"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView41"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="High"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/rhigh"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView42"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/rhigh"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Medium"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/rmed"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView43"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/rmed"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Low"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/rlow"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView44"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType=""
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/rlow"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Stability"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView45"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="High"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/shigh"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView46"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/shigh"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Medium"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/smed"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView47"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="150dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/smed"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Low"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/slow"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView48"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/slow"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Refrences"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/refList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView49"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/plusRef"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/refList"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <Button
+            android:id="@+id/nextToAbbrev"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusRef"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="475dp"
+            android:layout_marginBottom="109dp"
+            android:backgroundTint="@color/lightblue"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/helpPurpose"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="143dp"
+            android:layout_marginTop="281dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPurpose"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="271dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textPurpose"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="187dp"
+            android:layout_marginTop="281dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Specify the purpose of this Vision document."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpScope"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="533dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowScope"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="139dp"
+            android:layout_marginTop="521dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textScope"
+            android:layout_width="620dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="166dp"
+            android:layout_marginTop="522dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="A brief description of the scope of this Vision document; what Project(s) it is associated with, and anything else that is affected or influenced by this document."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPS"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="777dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPS"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="266dp"
+            android:layout_marginTop="768dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textPS"
+            android:layout_width="620dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="293dp"
+            android:layout_marginTop="778dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Provide a statement summarizing the general complex problem being solved by this project. "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPS1"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="829dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPS1"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="202dp"
+            android:layout_marginTop="847dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <TextView
+            android:id="@+id/textPS1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="878dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Describe the problem that your project is addressig"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPS2"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="984dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPS2"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="1001dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <TextView
+            android:id="@+id/textPS2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="1031dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Mention the stakeholders who are affected by the problem"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPS3"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="1166dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPS3"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="1181dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <TextView
+            android:id="@+id/textPS3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="1210dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="How is this problem affecting the stakeholders. what is the impact of the problem?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPS4"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="91dp"
+            android:layout_marginTop="1342dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPS4"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="86dp"
+            android:layout_marginTop="1357dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <TextView
+            android:id="@+id/textPS4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="1386dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="List some key benefits of a successful solution."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpDecom"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="295dp"
+            android:layout_marginTop="1447dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowDecom"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="312dp"
+            android:layout_marginTop="1437dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textDecom"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="339dp"
+            android:layout_marginTop="1443dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Decompose the above complex problem into sub-problems."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpBO"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView12"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowBO"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView12"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textBO"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView12"
+            android:layout_marginLeft="307dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Briefly describe the business opportunity being met by this project. Also, mention to which SDG your project belongs to (check the link). Describe how your project can achieve such goal."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPPS"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusBusinessOpportunity"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPPS"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusBusinessOpportunity"
+            android:layout_marginLeft="333dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textPPS"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusBusinessOpportunity"
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Provide an overall statement summarizing at the highest level, the unique position the product intends to fill in the marketplace. A product position statement communicates the intent of the application and the importance of the project to all concerned personnel. "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPPS1"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPPS1"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="89dp"
+            android:layout_marginTop="30dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <TextView
+            android:id="@+id/textPPS1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="60dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Mention the target customers"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPPS2"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView15"
+            android:layout_marginLeft="99dp"
+            android:layout_marginTop="114dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPPS2"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="180dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <TextView
+            android:id="@+id/textPPS2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="210dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Statement of the need or opportunity"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPPS3"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView16"
+            android:layout_marginLeft="92dp"
+            android:layout_marginTop="114dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPPS3"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="330dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <TextView
+            android:id="@+id/textPPS3"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="360dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="The product category"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPPS4"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView17"
+            android:layout_marginLeft="107dp"
+            android:layout_marginTop="99dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPPS4"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="103dp"
+            android:layout_marginTop="490dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <TextView
+            android:id="@+id/textPPS4"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="520dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Statement of key benefit; that is,- compelling reason to buy."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPPS5"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView18"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPPS5"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="116dp"
+            android:layout_marginTop="650dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <TextView
+            android:id="@+id/textPPS5"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="680dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Mention a primary competitive alternative"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPPS6"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView19"
+            android:layout_marginLeft="173dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPPS6"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="167dp"
+            android:layout_marginTop="800dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+        <TextView
+            android:id="@+id/textPPS6"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView14"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="830dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Mention the statement of primary differentiation"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpstake"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView21"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowstake"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView21"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textstake"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView21"
+            android:layout_marginLeft="317dp"
+            android:layout_marginTop="11dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Present a summary list of all the identified stakeholders."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpuser"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusStakeholder"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/textView24"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowuser"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusStakeholder"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/helpuser"
+            android:layout_marginStart="-20dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textuser"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusStakeholder"
+            android:layout_marginTop="11dp"
+            android:layout_marginStart="-20dp"
+            android:layout_toEndOf="@id/arrowuser"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Present a summary list of all the identified users."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpstakeneed"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusUser"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowstakeneed"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusUser"
+            android:layout_marginLeft="353dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textstakeneed"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusUser"
+            android:layout_marginLeft="380dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="List the key problems with existing solutions as perceived by the stakeholder. Clarify the following issues for each problem:
+•	What are the reasons for this problem?
+•	How is it solved now?
+•	What solutions does the stakeholder want?
+"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpAlter"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusUserNeeds"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowAlter"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusUserNeeds"
+            android:layout_marginLeft="353dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textAlter"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusUserNeeds"
+            android:layout_marginLeft="380dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Identify alternatives the stakeholder perceives as available. These can include buying a competitor’s product, building a homegrown solution or simply maintaining the status quo. List any known competitive choices that exist, or may become available. Include the major strengths and weaknesses of each competitor as perceived by the stakeholder."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpPerc"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusAlternative"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPerc"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusAlternative"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textPerc"
+            android:layout_width="690dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusAlternative"
+            android:layout_marginLeft="297dp"
+            android:layout_marginTop="-35dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="This subsection of the Vision document should put the product in perspective to other related products and the user’s environment. If the product is independent and totally self-contained, state it here. If the product is a component of a larger system, then this subsection should relate how these systems interact and should identify the relevant interfaces between the systems. One easy way to display the major components of the larger system, interconnections, and external interfaces is via a block diagram."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpCapa"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/proOver"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowCapa"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/proOver"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textCapa"
+            android:layout_width="670dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proOver"
+            android:layout_marginLeft="337dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Summarize the major benefits and features the product will provide. For example, a Vision document for a customer support system may use this part to address problem documentation, routing, and status reporting without mentioning the amount of detail each of these functions requires. Organize the functions so the list is understandable to the customer or to anyone else reading the document for the first time."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpAssum"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusCapabilities"
+            android:layout_marginLeft="365dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowAssum"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusCapabilities"
+            android:layout_marginLeft="384dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textAssum"
+            android:layout_width="670dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusCapabilities"
+            android:layout_marginLeft="411dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="List each of the factors that affects the features stated in the Vision document. List assumptions that, if changed, will alter the Vision document. For example, an assumption may state that a specific operating system will be available for the hardware designated for the software product. If the operating system is not available, the Vision document will need to change."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpAppen"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/con"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowAppen"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/con"
+            android:layout_marginLeft="366dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textAppen"
+            android:layout_width="670dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/con"
+            android:layout_marginLeft="392dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Features should be given attributes that can be used to evaluate, track, prioritize, and manage the product items proposed for implementation. All requirement types and attributes should be outlined in the Requirements Management Plan, however you may wish to list and briefly describes the attributes for features that have been chosen. Following subsections represent a set of suggested feature attributes."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpProductFeat"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusAssump"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/helpPrio"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView32"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowPrio"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView32"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textPrio"
+            android:layout_width="670dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView32"
+            android:layout_marginLeft="167dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Set by Marketing, the product manager or the business analyst. All requirements are not created equal. Ranking requirements by their relative benefit to the end user opens a dialogue with customers, analysts and members of the development team. Used in managing scope and determining development priority."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/helpEffo"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/puseful"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowEffo"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/puseful"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textEffo"
+            android:layout_width="670dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/puseful"
+            android:layout_marginLeft="167dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Set by the development team. Because some features require more time and resources than others, estimating the number of team or person-weeks, lines of code required or function points, for example, is the best way to gauge complexity and set expectations of what can and cannot be accomplished in a given time frame. Used in managing scope and determining development priority."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpRisk"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/elow"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowRisk"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/elow"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textRisk"
+            android:layout_width="670dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/elow"
+            android:layout_marginLeft="147dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Set by development team based on the probability the project will experience undesirable events, such as cost overruns, schedule delays or even cancellation. Most project managers find categorizing risks as high, medium, and low sufficient, although finer gradations are possible. Risk can often be assessed indirectly by measuring the uncertainty (range) of the projects teams schedule estimate."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/helpStab"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/rlow"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowStab"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/rlow"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textStab"
+            android:layout_width="670dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlow"
+            android:layout_marginLeft="172dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Set by analyst and development team based on the probability the feature will change or the team’s understanding of the feature will change. Used to help establish development priorities and determine those items for which additional elicitation is the appropriate next action."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

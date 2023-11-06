@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewnoti"
+        android:layout_width="704dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:longClickable="true"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="10dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#edf0ee"
+
+
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logoOFnoti"
+                android:layout_width="87dp"
+                android:layout_height="84dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="21dp"
+                android:elevation="2dp"
+                android:src="@drawable/placeholder" />
+
+
+            <ImageView
+                android:id="@+id/neww"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="658dp"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_baseline_fiber_manual_record_24" />
+
+            <TextView
+                android:id="@+id/notititleitem"
+                android:layout_width="415dp"
+                android:layout_height="33dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="143dp"
+                android:layout_marginTop="30dp"
+                android:text="loading title!"
+                android:textAlignment="textStart"
+                android:textColor="@color/darkblue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/notidescription"
+                android:layout_width="513dp"
+                android:layout_height="39dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="143dp"
+                android:layout_marginTop="59dp"
+                android:paddingTop="5dp"
+                android:text="loading!"
+                android:textAlignment="textStart"
+                android:textColor="@color/darkblue"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/notitime"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="599dp"
+                android:layout_marginTop="84dp"
+                android:text="10:43Am"
+                android:textAlignment="center"
+                android:textColor="@color/semipurple"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

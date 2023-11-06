@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="700dp"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:background="@drawable/popupbackground"
+    >
+
+
+    <EditText
+        android:id="@+id/searchForDocShare"
+        android:layout_width="600dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawableTint="@color/blue"
+        android:hint=" Sponsor Name"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:layout_width="600dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/searchForDocShare"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shareRV"
+            android:layout_width="600dp"
+            android:layout_height="350dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"/>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sponsorProPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/lightblue"
+        android:layout_gravity="center"
+        android:src="@drawable/addlogo" />
+
+    <TextView
+        android:id="@+id/sponsorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/armata"
+        android:text="Name"
+        android:layout_gravity="center"
+        android:textColor="@color/semipurple"
+        android:textSize="18dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/stage1Cir"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#9599A4"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="P"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stage2Cir"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#9599A4"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="V"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stage3Cir"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#9599A4"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="S"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

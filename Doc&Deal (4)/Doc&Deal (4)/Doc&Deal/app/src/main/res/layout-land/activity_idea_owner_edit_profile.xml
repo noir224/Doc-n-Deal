@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdeaOwnerEditProfile"
+    android:background="@drawable/backgroundtwo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/IOEditprofilePic"
+        android:layout_width="136dp"
+        android:layout_height="138dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="444dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/IOEdituserName"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/IOEditprofilePic"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/IOEditemail"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/IOEdituserName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp" />
+    <EditText
+        android:id="@+id/IOEditphoneNumber"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/IOEditemail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Phone"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/IOEditfield"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/IOEditphoneNumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_business_center_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Field"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/creatorSaveEdit"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IOEditfield"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="427dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/red"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/cancelEdit"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creatorSaveEdit"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="427dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/blue"
+        android:text="Cancel"
+        android:textColor="#FAFAFA" />
+
+
+
+</RelativeLayout>

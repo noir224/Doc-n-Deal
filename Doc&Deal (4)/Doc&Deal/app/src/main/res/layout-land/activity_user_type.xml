@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundtwo"
+    tools:context=".UserType">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="321dp"
+        android:layout_height="167dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="367dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginBottom="576dp"
+        app:srcCompat="@drawable/logodark" />
+
+
+    <TextView
+        android:id="@+id/creatorlabel"
+        android:layout_width="302dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/creatoricon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="11dp"
+        android:clickable="true"
+        android:fontFamily="@font/armata"
+        android:text="Creator?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/blue"
+        android:textColorHighlight="#6E85B2"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/sponsorlabel"
+        android:layout_width="302dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/sponsoricon"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="-11dp"
+        android:layout_toEndOf="@+id/creatorlabel"
+        android:clickable="true"
+        android:fontFamily="@font/armata"
+        android:text="Sponsor?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/blue"
+        android:textColorHighlight="#6E85B2"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/areyou"
+        android:layout_width="485dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="247dp"
+
+        android:clickable="true"
+        android:fontFamily="@font/armata"
+        android:text="Are you a..."
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/blue"
+        android:textSize="45dp" />
+
+    <ImageView
+        android:id="@+id/creatoricon"
+        android:layout_width="191dp"
+        android:layout_height="196dp"
+        android:layout_below="@+id/areyou"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="66dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/creatoricon" />
+
+    <ImageView
+        android:id="@+id/sponsoricon"
+        android:layout_width="182dp"
+        android:layout_height="212dp"
+        android:layout_below="@+id/areyou"
+        android:layout_marginStart="198dp"
+        android:layout_marginTop="66dp"
+        android:layout_toEndOf="@+id/creatoricon"
+        android:clickable="true"
+        app:srcCompat="@drawable/sponsoricon" />
+
+</RelativeLayout>

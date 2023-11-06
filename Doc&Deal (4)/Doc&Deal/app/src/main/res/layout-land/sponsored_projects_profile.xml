@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="147dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+
+            android:background="@color/blue">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/s1image"
+                android:layout_width="62dp"
+                android:layout_height="73dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="6dp"
+                android:elevation="2dp"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/Projectforcompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s1image"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="6dp"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="Project name"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/descOfproject"
+                android:layout_width="101dp"
+                android:layout_height="47dp"
+                android:layout_below="@id/Projectforcompany"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="6dp"
+                android:autoSizeMaxTextSize="14dp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="description"
+                android:textAlignment="center"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+    <TextView
+        android:id="@+id/uatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/armata"
+        android:text="UA"
+        android:textColor="@color/semipurple"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ua"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:minHeight="196dp"
+        android:layout_below="@+id/uatext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_tv_background"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:padding="15dp"
+        android:selectAllOnFocus="true"
+        android:shadowColor="@color/blue"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/srtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/ua"
+        android:fontFamily="@font/armata"
+        android:text="SR"
+        android:textColor="@color/semipurple"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sr"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:minHeight="196dp"
+        android:layout_below="@+id/uatext"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/ua"
+        android:background="@drawable/custom_tv_background"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:padding="15dp"
+        android:selectAllOnFocus="true"
+        android:shadowColor="@color/blue"
+        android:textIsSelectable="true" />
+
+
+    <ImageView
+        android:id="@+id/deleterow"
+        android:layout_width="46dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@id/srtext"
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        app:tint="@color/lightblue" />
+
+    <ImageView
+        android:id="@+id/editrow"
+        android:layout_width="46dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@id/deleterow"
+        app:srcCompat="@drawable/ic_baseline_edit_24"
+        app:tint="@color/lightblue" />
+
+</RelativeLayout>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundtwo"
+    tools:context=".SponsorProfile"
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="#222020" />
+
+    <TextView
+        android:id="@+id/inv"
+        android:layout_width="200dp"
+        android:layout_height="118dp"
+        android:background="#A4B7DD"
+        android:textSize="18sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SprofilePicCProfile"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/profile" />
+
+
+    <TextView
+        android:id="@+id/ShomeProfile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SprofilePicCProfile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_baseline_home_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Home"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/ProjectIdeas"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ShomeProfile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:drawableStart="@drawable/ic_baseline_library_books_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Project Ideas"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/SnotiProfile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ProjectIdeas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:drawableStart="@drawable/ic_baseline_notifications_active_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Notifications"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/SponsorLogoutBtnProfile"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginBottom="-1dp"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_baseline_subdirectory_arrow_right_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/semipurple"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:text="Logout"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SprofilePicProfile"
+        android:layout_width="158dp"
+        android:layout_height="161dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="57dp"
+        android:layout_toEndOf="@+id/ShomeProfile"
+        android:src="@drawable/profile" />
+
+
+    <TextView
+        android:id="@+id/SponsorUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="274dp"
+        android:layout_marginTop="84dp"
+        android:layout_toEndOf="@+id/ShomeProfile"
+        android:backgroundTint="@color/red"
+        android:hint="Username"
+        android:textColor="@color/darkblue"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/SponsorField"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SponsorUserName"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/ShomeProfile"
+        android:backgroundTint="@color/red"
+        android:hint="Sponsor Field"
+        android:textColor="@color/darkblue"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/SponsorPhoneNumber"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SimageView4"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-70dp"
+        android:layout_toEndOf="@id/SimageView5"
+        android:text="Phone Number"
+        android:textColor="@color/darkblue"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/SponsorEmail"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SponsorField"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="381dp"
+        android:layout_toEndOf="@id/SimageView4"
+        android:text="Email"
+        android:textColor="@color/darkblue"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/SponsorEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SponsorField"
+        android:layout_marginStart="474dp"
+        android:layout_marginTop="34dp"
+        android:backgroundTint="@color/blue"
+        android:text="Edit" />
+
+    <ImageView
+        android:id="@+id/SimageView4"
+        android:layout_width="51dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/SimageView5"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/ic_baseline_email_24"
+        app:tint="@color/red" />
+
+    <ImageView
+        android:id="@+id/SimageView5"
+        android:layout_width="51dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/SponsorUserName"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="381dp"
+        android:layout_toEndOf="@id/ShomeProfile"
+        app:srcCompat="@drawable/ic_baseline_phone_24"
+        app:tint="@color/red" />
+
+    <TextView
+        android:id="@+id/SponsoredProjects"
+        android:layout_width="59dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/SprofilePicProfile"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="141dp"
+        android:layout_toEndOf="@+id/ShomeProfile"
+        android:alpha="1"
+        android:backgroundTint="@color/red"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/RejectedProjects"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/SponsoredProjects"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/ShomeProfile"
+        android:alpha="1"
+        android:backgroundTint="@color/red"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/Sfb"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:layout_toEndOf="@id/Stwt"
+        android:src="@drawable/facebook"
+        />
+
+    <ImageView
+        android:id="@+id/Stwt"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="36dp"
+        android:layout_toEndOf="@id/Sinsta"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/Sinsta"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="581dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@id/ShomeProfile"
+        app:srcCompat="@drawable/instagram" />
+
+    <TextView
+        android:id="@+id/rejectedPercent"
+        android:layout_width="161dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/SprofilePicProfile"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="191dp"
+        android:layout_toEndOf="@+id/RejectedProjects"
+        android:alpha="1"
+        android:backgroundTint="@color/red"
+        android:text="% of Rejected Projects"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/sponsoredPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@id/SprofilePicProfile"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="141dp"
+        android:layout_toEndOf="@+id/SponsoredProjects"
+        android:alpha="1"
+        android:backgroundTint="@color/red"
+        android:text="% of Sponsored Projects"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="460dp"
+        android:layout_height="81dp"
+        android:layout_below="@id/SprofilePicProfile"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="45dp"
+        android:layout_toEndOf="@+id/ShomeProfile"
+        android:alpha="1"
+        android:backgroundTint="@color/red"
+        android:hint="Description"
+        android:textColor="@color/darkblue"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/addSP"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SponsorEmail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="419dp"
+        android:layout_marginTop="73dp"
+        android:backgroundTint="#A4B7DD"
+        android:text="Add a Sponsored Project"
+        android:textColor="#FAFAFA" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RVsponsoredPro"
+        android:layout_width="441dp"
+        android:layout_height="294dp"
+        android:layout_below="@id/SponsorEdit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_toEndOf="@id/ShomeProfile"
+        android:orientation="horizontal">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

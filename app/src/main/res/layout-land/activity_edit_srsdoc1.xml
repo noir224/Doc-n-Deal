@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSRSdoc1">
+
+    <RelativeLayout
+        android:id="@+id/PROD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/armata"
+            android:text="Software Requirements Specification Document"
+            android:textAlignment="center"
+            android:textColor="@color/semipurple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/srsFinish"
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            app:srcCompat="@drawable/ic_baseline_close_24"
+            app:tint="@color/red" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="700dp"
+            android:fontFamily="@font/armata"
+            android:text="Document name"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/docNameSRS"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textLongMessage|textPersonName"
+            android:padding="15dp"
+            android:shadowColor="@color/blue"
+            android:text="Untitled"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/uploaducd"
+            android:layout_width="380dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/docNameSRS"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/lightblue"
+            android:text="Upload UseCase Diagram Image"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/helpusecasediagramedit"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/textView5"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="136dp"
+            android:layout_toEndOf="@id/uploaducd"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <Button
+            android:id="@+id/uploaducdxml"
+            android:layout_width="380dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/docNameSRS"
+            android:layout_toEndOf="@id/uploaducd"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/lightblue"
+            android:text="Upload UseCase Diagram XML"
+            android:textSize="18dp" />
+        <ImageView
+            android:id="@+id/ucdimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uploaducd"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="49dp"/>
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@id/ucdimage"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="700dp"
+            android:fontFamily="@font/armata"
+            android:text="Usecases:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ucsrv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView39"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/ucs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ucsrv"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/plusuc"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@id/ucs"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="407dp"
+            android:layout_height="34dp"
+            android:layout_below="@id/plusuc"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="568dp"
+            android:fontFamily="@font/armata"
+            android:text="Non-Functional Requirements:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nfrsrv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView40"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/nfrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nfrsrv"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/plusnfr"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@id/nfrs"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="407dp"
+            android:layout_height="34dp"
+            android:layout_below="@id/plusnfr"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="568dp"
+            android:fontFamily="@font/armata"
+            android:text="References:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/refrv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView41"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/refs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/refrv"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/plusrefs"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@id/refs"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+        <Button
+            android:id="@+id/nextToAbbrev"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plusrefs"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="475dp"
+            android:layout_marginBottom="109dp"
+            android:backgroundTint="@color/lightblue"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

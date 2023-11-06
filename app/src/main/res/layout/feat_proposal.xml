@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/feture"
+        android:layout_width="700dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Project Feature"
+        android:inputType="textLongMessage|textPersonName"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+
+    <ImageView
+        android:id="@+id/deletefeture"
+        android:layout_width="33dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/feture"
+        android:layout_alignEnd="@+id/feture"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="-55dp"
+        android:layout_marginBottom="-50dp"
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        app:tint="@color/lightblue" />
+
+
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SponsorEditProfile"
+        android:background="@drawable/backgroundtwo">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/SEditprofilePic"
+            android:layout_width="145dp"
+            android:layout_height="156dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/SEdituserName"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SEditprofilePic"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="379dp"
+            android:layout_marginTop="-146dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/SEditEmail"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SEdituserName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="378dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_email_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/SEditphoneNumber"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SEditEmail"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="378dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Phone"
+            android:inputType="text"
+            android:padding="8dp" />
+
+        <Spinner
+            android:id="@+id/editspinner"
+            android:layout_width="386dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/SEditphoneNumber"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="379dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_business_center_24"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/SDescription"
+            android:layout_width="579dp"
+            android:layout_height="108dp"
+            android:layout_below="@+id/SEditprofilePic"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="102dp"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/SProjectsPerc"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SEditprofilePic"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="233dp"
+            android:ems="10"
+            android:hint="Sponsored Projects Percentage"
+            android:inputType="text"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/RProjectsPerc"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SEditprofilePic"
+            android:layout_marginStart="500dp"
+            android:layout_marginTop="233dp"
+            android:ems="10"
+            android:hint="Rejected Projects Percentage"
+            android:inputType="text"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/EditInstagram"
+            android:layout_width="418dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SProjectsPerc"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="54dp"
+            android:layout_toEndOf="@id/Editinsta"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Instagram"
+            android:inputType="text"
+            android:padding="7dp" />
+
+        <EditText
+            android:id="@+id/EditTwitter"
+            android:layout_width="421dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SProjectsPerc"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="103dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Twitter"
+            android:inputType="text"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/EditFacebook"
+            android:layout_width="421dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SProjectsPerc"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="149dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Facebook"
+            android:inputType="text"
+            android:padding="6dp" />
+
+        <ImageView
+            android:id="@+id/Editfb"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-459dp"
+            android:layout_marginTop="632dp"
+            android:layout_toEndOf="@id/EditTwitter"
+            android:src="@drawable/facebook"
+            />
+
+        <ImageView
+            android:id="@+id/Edittwt"
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-459dp"
+            android:layout_marginTop="581dp"
+            android:layout_toEndOf="@id/EditInstagram"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/Editinsta"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/SProjectsPerc"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="532dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <Button
+            android:id="@+id/SponsorSaveEdit"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editspinner"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="399dp"
+            android:layout_marginTop="425dp"
+            android:backgroundTint="@color/red"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/ScancelEdit"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SponsorSaveEdit"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="402dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/blue"
+            android:text="Cancel"
+            android:textColor="#FAFAFA" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

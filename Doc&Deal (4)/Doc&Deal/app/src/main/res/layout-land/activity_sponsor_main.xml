@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundtwo"
+    tools:context=".SponsorMain">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="#222020" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainsponrv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/SponsoredProjects"
+        android:layout_toEndOf="@+id/MainhomeProfile" />
+
+    <TextView
+        android:id="@+id/inv"
+        android:layout_width="200dp"
+        android:layout_height="118dp"
+        android:textSize="18sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/MainprofilePicCProfile"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/profile" />
+
+
+    <TextView
+        android:id="@+id/MainhomeProfile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainprofilePicCProfile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="30dp"
+        android:background="#A4B7DD"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_baseline_home_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Home"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/MainProjectIdeas"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainhomeProfile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:drawableStart="@drawable/ic_baseline_library_books_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Project Ideas"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/MainNotiProfile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainProjectIdeas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:drawableStart="@drawable/ic_baseline_notifications_active_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Notifications"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/MainSponsorLogoutBtnProfile"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginBottom="-1dp"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_baseline_subdirectory_arrow_right_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/semipurple"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:text="Logout"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/SponsoredProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="274dp"
+        android:layout_marginTop="84dp"
+        android:layout_toEndOf="@+id/MainhomeProfile"
+        android:backgroundTint="@color/red"
+        android:hint="Sponsored Projects"
+        android:textColor="@color/darkblue"
+        android:textSize="29sp" />
+
+</RelativeLayout>

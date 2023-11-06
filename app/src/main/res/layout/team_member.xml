@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="275dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="700dp"
+        android:fontFamily="@font/armata"
+        android:text="Project Objectives"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/projectObjectives"
+        android:layout_width="871dp"
+        android:layout_height="190dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/custom_long_input"
+        android:ems="10"
+        android:elevation="8dp"
+        android:gravity="top"
+        android:hint="Project Objectives"
+        android:inputType="textLongMessage|textPersonName"
+        android:padding="15dp"
+        android:shadowColor="@color/blue"
+        />
+
+</RelativeLayout>

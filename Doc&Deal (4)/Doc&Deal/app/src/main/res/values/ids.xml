@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageView3" type="id" />
+    <item name="emailLogin" type="id" />
+    <item name="passLogin" type="id" />
+    <item name="forgot" type="id" />
+    <item name="LoginLoginBtn" type="id" />
+    <item name="SignUpLoginBtn" type="id" />
+</resources>

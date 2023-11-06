@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SponsorEditProfile"
+    >
+
+    <ScrollView
+        android:id="@+id/fullScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/SEditprofilePic"
+                android:layout_width="221dp"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:id="@+id/SEdituserName"
+                android:layout_width="388dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SEditprofilePic"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="369dp"
+                android:layout_marginTop="-183dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/SEditEmail"
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SEdituserName"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="372dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_email_icon"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/SEditphoneNumber"
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SEditEmail"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="372dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Phone"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="22dp" />
+
+
+            <Spinner
+                android:id="@+id/editspinner"
+                android:layout_width="386dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/SEditphoneNumber"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="373dp"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_business_center_24"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="252dp"
+                android:layout_marginTop="306dp"
+                android:text="Category:"
+                android:textAlignment="center"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/SDescription"
+                android:layout_width="680dp"
+                android:layout_height="212dp"
+                android:layout_below="@+id/SEditprofilePic"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="91dp"
+                android:layout_marginTop="136dp"
+                android:background="@drawable/custom_long_input"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/EditInstagram"
+                android:layout_width="502dp"
+                android:layout_height="53dp"
+                android:layout_below="@+id/SDescription"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="341dp"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="enter Instagram link"
+                android:inputType="text"
+                android:padding="7dp"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/EditTwitter"
+                android:layout_width="502dp"
+                android:layout_height="53dp"
+                android:layout_below="@+id/EditInstagram"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="339dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="enter Twitter link"
+                android:inputType="text"
+                android:padding="7dp"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/EditFacebook"
+                android:layout_width="502dp"
+                android:layout_height="53dp"
+                android:layout_below="@+id/EditTwitter"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="338dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="enter Facebook link"
+                android:inputType="text"
+                android:padding="7dp"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/Editfb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/Edittwt"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="227dp"
+                android:layout_marginLeft="227dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/Edittwt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/Editinsta"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="227dp"
+                android:layout_marginLeft="227dp"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/Editinsta"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/SDescription"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="652dp"
+                app:srcCompat="@drawable/instagram" />
+
+            <Button
+                android:id="@+id/ScancelEdit"
+                android:layout_width="189dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="899dp"
+                android:layout_marginRight="340dp"
+                android:backgroundTint="@color/blue"
+                android:text="Cancel"
+                android:textColor="#FAFAFA"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/SponsorSaveEdit"
+                android:layout_width="189dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="899dp"
+                android:layout_marginRight="110dp"
+                android:layout_marginBottom="90dp"
+                android:backgroundTint="@color/red"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

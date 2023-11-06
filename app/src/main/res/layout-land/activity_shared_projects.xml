@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SharedProjects">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="#aba4bd" />
+
+    <TextView
+        android:id="@+id/inv"
+        android:layout_width="200dp"
+        android:layout_height="118dp"
+        android:textSize="18sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePicCSharedProjects"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/homeSharedProjects"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePicCSharedProjects"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_baseline_home_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Home"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/SharedProjects"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeSharedProjects"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:background="#A4B7DD"
+        android:drawableStart="@drawable/ic_baseline_library_books_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Shared Projects"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/NotiSharedProjects"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SharedProjects"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:drawableStart="@drawable/ic_baseline_notifications_active_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Notifications"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/newnotiSStatus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="174dp"
+        android:layout_marginTop="252dp"
+        android:src="@drawable/ic_baseline_fiber_manual_record_24" />
+
+
+    <TextView
+        android:id="@+id/SponsorLogoutBtnSharedProjects"
+        android:layout_width="195dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="0dp"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_baseline_subdirectory_arrow_right_24"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="LOGOUT"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/fullScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="850dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/textView3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="850dp">
+
+            <TextView
+                android:id="@+id/nullSharedProjects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="294dp"
+                android:layout_marginTop="221dp"
+                android:fontFamily="@font/armata"
+                android:hint="No shared projects"
+                android:visibility="gone"
+                android:textSize="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newProjectsrv"
+                android:layout_width="775dp"
+                android:layout_height="170dp"
+                android:layout_below="@+id/RecentProjects"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/InProgressProjectsrv"
+                android:layout_width="775dp"
+                android:layout_height="170dp"
+                android:layout_below="@+id/Inp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/FinishedProjectsrv"
+                android:layout_width="775dp"
+                android:layout_height="170dp"
+                android:layout_below="@+id/FinishedP"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RejectedProjectsrv"
+                android:layout_width="775dp"
+                android:layout_height="170dp"
+                android:layout_below="@+id/RejectedP"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/RecentProjects"
+                android:layout_width="870dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/help"
+                android:layout_marginTop="60dp"
+                android:background="@color/blue"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/armata"
+                android:text="New Projects"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/semipurp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_baseline_color_lens_24"
+                android:tint="@color/semipurple" />
+
+            <TextView
+                android:id="@+id/Text2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/semipurp"
+                android:text="Pending"
+                android:textColor="@color/black" />
+<TextView
+    android:id="@+id/colorhint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Colors Hint"
+    android:textColor="@color/blue"
+    android:textSize="17dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    />
+
+            <ImageView
+                android:id="@+id/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="230dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/Text2"
+                android:src="@drawable/ic_baseline_color_lens_24"
+                android:tint="#8AC984" />
+
+            <TextView
+                android:id="@+id/Text4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@id/green"
+                android:text="Accepted"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Inp"
+                android:layout_width="870dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/newProjectsrv"
+                android:layout_marginTop="22dp"
+                android:background="@color/blue"
+                android:fontFamily="@font/armata"
+                android:text="In-Progress Projects"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/ic_baseline_color_lens_24"
+                android:tint="#E7A808" />
+
+            <ImageView
+                android:id="@+id/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="229dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="70dp"
+                android:layout_toEndOf="@+id/Text3"
+                android:src="@drawable/ic_baseline_color_lens_24"
+                android:tint="#FD4C4C" />
+
+            <TextView
+                android:id="@+id/Text3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Text2"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/yellow"
+                android:text="Accepted With Revision"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Text5"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Text4"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/red"
+                android:text="Rejected"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/null91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Inp"
+                android:layout_gravity="center"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="94dp"
+                android:fontFamily="@font/armata"
+                android:hint="No Pending Projects"
+                android:visibility="gone"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/FinishedP"
+                android:layout_width="870dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/InProgressProjectsrv"
+                android:layout_marginTop="24dp"
+                android:background="@color/blue"
+                android:fontFamily="@font/armata"
+                android:text="Finished Projects"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/RejectedP"
+                android:layout_width="870dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/FinishedProjectsrv"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue"
+                android:fontFamily="@font/armata"
+                android:text="Rejected Projects"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/null92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FinishedP"
+                android:layout_gravity="center"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="90dp"
+                android:fontFamily="@font/armata"
+                android:hint="No Accepted Projects"
+                android:visibility="gone"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/null922"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RejectedP"
+                android:layout_gravity="center"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="82dp"
+                android:fontFamily="@font/armata"
+                android:hint="No Rejected Projects"
+                android:visibility="gone"
+                android:textSize="20dp" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progBarNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="370dp"
+                android:layout_marginTop="210dp"
+                android:indeterminate="true"
+                app:indicatorColor="@color/semipurple" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progBarInprog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="370dp"
+                android:layout_marginTop="473dp"
+                android:indeterminate="true"
+                app:indicatorColor="@color/semipurple" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progBarFinished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="373dp"
+                android:layout_marginTop="770dp"
+                android:indeterminate="true"
+                app:indicatorColor="@color/semipurple" />
+
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progBarRejected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="373dp"
+                android:layout_marginTop="1022dp"
+                android:indeterminate="true"
+                app:indicatorColor="@color/semipurple" />
+
+
+            <ImageView
+                android:id="@+id/help"
+                android:layout_width="35dp"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="778dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_baseline_help_outline_24" />
+
+            <TextView
+                android:id="@+id/warningg"
+                android:layout_width="404dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/newProjectsrv"
+                android:layout_marginLeft="408dp"
+                android:layout_marginTop="-20dp"
+                android:text="* Accepting a proposal is accepting the whole project"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

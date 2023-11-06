@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:longClickable="true"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="220dp"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/black"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:longClickable="true"
+        android:id="@+id/cardviewProj"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:background="@color/blue">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/s1image"
+                android:layout_width="82dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="21dp"
+                android:elevation="2dp"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/Projectforcompany"
+                android:layout_width="124dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/s1image"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="Project name"
+                android:textAlignment="center"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/descOfproject"
+                android:layout_width="133dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/Projectforcompany"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:autoSizeMaxTextSize="17dp"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="description"
+                android:textAlignment="center"
+                android:textColor="@color/lightblue"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

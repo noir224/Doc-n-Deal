@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EditProject">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/editProjLogo"
+                android:layout_width="123dp"
+                android:layout_height="119dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="462dp"
+                android:layout_marginTop="37dp"
+                android:src="@drawable/addlogo" />
+
+
+            <Switch
+                android:id="@+id/makepriv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editProjAC"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="70dp"
+                android:layout_toEndOf="@id/editProjLink1"
+                android:checked="true"
+                android:fontFamily="@font/armata"
+                android:text="Public  "
+                android:textColor="@color/semipurple"
+                android:textSize="20dp"
+                android:thumbTint="@color/semipurple"
+                android:trackTint="@color/blue" />
+
+            <TextView
+                android:id="@+id/privateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editProjAC"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="70dp"
+                android:layout_toEndOf="@+id/makepriv"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/armata"
+                android:text="Private"
+                android:textColor="@color/semipurple"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editProjLogo"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/white"
+                android:text="Project Name*"
+                android:textColor="@color/semipurple"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/editProjName1"
+                android:layout_width="415dp"
+                android:layout_height="61dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/custom_input"
+                android:hint="Project Name"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editProjName1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/white"
+                android:text="Website/Social Media Link"
+                android:textColor="@color/semipurple"
+                android:textSize="24dp" />.
+
+            <EditText
+                android:id="@+id/editProjLink1"
+                android:layout_width="415dp"
+                android:layout_height="61dp"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/custom_input"
+                android:hint="Website/Social Media Link"
+                android:inputType="textLongMessage"
+                android:padding="8dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editProjLogo"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="482dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@id/textView"
+                android:backgroundTint="@color/white"
+                android:text="Category*"
+                android:textColor="@color/semipurple"
+                android:textSize="24dp" />
+
+
+            <Spinner
+                android:id="@+id/editProjAC"
+                android:layout_width="415dp"
+                android:layout_height="61dp"
+                android:layout_below="@id/textView5"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/editProjName1"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editProjLink1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/white"
+                android:text="Description*"
+                android:textColor="@color/semipurple"
+                android:textSize="24dp" />.
+
+            <EditText
+                android:id="@+id/editProjDesc1"
+                android:layout_width="924dp"
+                android:layout_height="185dp"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/custom_long_input"
+                android:gravity="start|top"
+                android:hint="Description*"
+                android:inputType="textMultiLine"
+                android:padding="8dp"
+                android:windowSoftInputMode="stateHidden" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editProjDesc1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/white"
+                android:text="Team Member*"
+                android:textColor="@color/semipurple"
+                android:textSize="24dp" />.
+
+            <LinearLayout
+                android:id="@+id/teamlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical"></LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/teamRV"
+                android:layout_width="924dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teamlist"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="17dp" />
+
+            <ImageView
+                android:id="@+id/plusTeam"
+                android:layout_width="92dp"
+                android:layout_height="79dp"
+                android:layout_below="@+id/teamRV"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="470dp"
+                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+                app:tint="@color/semipurple" />
+
+            <Button
+                android:id="@+id/editProjButton"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plusTeam"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="429dp"
+                android:layout_marginTop="27dp"
+                android:backgroundTint="@color/red"
+                android:text="Edit"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

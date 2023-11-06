@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatorSponsorProfile"
+    >
+
+    <ScrollView
+        android:id="@+id/fullScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/CSprofilePicProfile"
+                android:layout_width="162dp"
+                android:layout_height="148dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="321dp"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/CSponsorUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CSprofilePicProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="274dp"
+                android:layout_marginTop="10dp"
+                android:hint="Username"
+                android:textColor="@color/darkblue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/CsponsorUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="274dp"
+                android:layout_marginTop="104dp"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/darkblue"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/CSponsorField"
+                android:layout_width="253dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/CSponsorUserName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/red"
+                android:hint="Sponsor Field"
+                android:textAlignment="center"
+                android:textColor="@color/darkblue"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/Cdesc"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@+id/CSponsorField"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue"
+                android:paddingLeft="20dp"
+                android:text="Description"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/CSponsorPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CSponsorEmail"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/CSimageView5"
+                android:hint="Phone Number"
+                android:textColor="@color/darkblue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/CPercentage"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@+id/CDescription"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue"
+                android:paddingLeft="20dp"
+                android:text="Projects' Percentages"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/CContact"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@+id/CSponsoredProjects"
+                android:layout_marginTop="30dp"
+                android:background="@color/blue"
+                android:paddingLeft="20dp"
+                android:text="Contact Information"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/CSP"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@+id/CSimageView5"
+                android:layout_marginTop="34dp"
+                android:background="@color/blue"
+                android:paddingLeft="20dp"
+                android:text="Sponsored Projects"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/Ctexthelpsponsorprofile"
+                android:layout_width="232dp"
+                android:layout_height="89dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="743dp"
+                android:layout_marginTop="813dp"
+                android:alpha="0.8"
+                android:background="@color/lightblue"
+                android:maxWidth="400dp"
+                android:maxHeight="250dp"
+                android:minWidth="400dp"
+                android:padding="10dp"
+                android:shadowRadius="10"
+                android:text="here are the projects sponsored by this sponsor"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/applyTobtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CRVsponsoredPro"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="541dp"
+                android:layout_marginTop="86dp"
+                android:visibility="gone"
+                android:layout_marginBottom="70dp"
+                android:backgroundTint="@color/blue"
+                android:text="Apply a project"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/Carrowsponsorprofile"
+                android:layout_width="46dp"
+                android:layout_height="47dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="953dp"
+                android:layout_marginTop="811dp"
+                android:alpha="0.8"
+                android:src="@drawable/ic_baseline_arrow_right_24" />
+
+            <TextView
+                android:id="@+id/CSponsorEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CContact"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/CSimageView4"
+                android:hint="Email"
+                android:textColor="@color/darkblue"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/CSimageView4"
+                android:layout_width="51dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/CContact"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="23dp"
+                app:srcCompat="@drawable/ic_baseline_email_24"
+                app:tint="@color/red" />
+
+            <ImageView
+                android:id="@+id/CSimageView5"
+                android:layout_width="45dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/CSimageView4"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_baseline_phone_24"
+                app:tint="@color/red" />
+
+            <TextView
+                android:id="@+id/CSponsoredProjects"
+                android:layout_width="59dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/CPercentage"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="26dp"
+                android:backgroundTint="@color/red"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/darkblue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/CRejectedProjects"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/CPercentage"
+                android:layout_marginStart="366dp"
+                android:layout_marginLeft="437dp"
+                android:layout_marginTop="26dp"
+                android:layout_toEndOf="@id/CSponsoredProjects"
+                android:backgroundTint="@color/red"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/darkblue"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/CSfb"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/CContact"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@id/CStwt"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/CStwt"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/CContact"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@id/CSinsta"
+                app:srcCompat="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/CSinsta"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/CContact"
+                android:layout_marginLeft="700dp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/instagram" />
+
+
+
+            <TextView
+                android:id="@+id/CrejectedPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_below="@id/CPercentage"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="24dp"
+                android:layout_toEndOf="@+id/CRejectedProjects"
+                android:alpha="1"
+                android:backgroundTint="@color/red"
+                android:text="% of Rejected Projects"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/CsponsoredPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_below="@id/CPercentage"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="24dp"
+                android:layout_toEndOf="@+id/CSponsoredProjects"
+                android:alpha="1"
+                android:backgroundTint="@color/red"
+                android:text="% of Sponsored Projects"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/CDescription"
+                android:layout_width="1019dp"
+                android:layout_height="109dp"
+                android:layout_below="@id/Cdesc"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:alpha="1"
+                android:backgroundTint="@color/red"
+                android:hint="No Description"
+                android:textColor="@color/darkblue"
+                android:textSize="20sp" />
+
+
+
+            <Button
+                android:id="@+id/CapplyTobtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CRVsponsoredPro"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginBottom="70dp"
+                android:backgroundTint="@color/blue"
+                android:text="Apply a project"
+                android:visibility="gone"
+                android:textSize="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/CRVsponsoredPro"
+                android:layout_width="900dp"
+                android:layout_height="242dp"
+                android:layout_below="@id/CSP"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/Cprojectrvhelppic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="986dp"
+                android:layout_marginTop="811dp"
+                android:src="@drawable/ic_baseline_help_outline_24" />
+
+            <TextView
+                android:id="@+id/CnullProjects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="307dp"
+                android:layout_marginTop="920dp"
+                android:fontFamily="@font/armata"
+                android:text="There aren't any sponsored projects."
+                android:textColor="@color/blue"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

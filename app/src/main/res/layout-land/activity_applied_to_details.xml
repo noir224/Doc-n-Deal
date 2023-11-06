@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppliedToDetails">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="322dp"
+                android:layout_marginTop="41dp"
+                android:fontFamily="@font/armata"
+                android:text="Application Details"
+                android:textSize="40dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/hscv"
+        android:layout_width="920dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/appliddocsRV"
+            android:layout_width="920dp"
+            android:layout_height="170dp"></androidx.recyclerview.widget.RecyclerView>
+    </HorizontalScrollView>
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progBarProjectDetails"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="500dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        app:indicatorColor="@color/semipurple"
+        />
+
+    <TextView
+        android:id="@+id/ifnullProjectDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/armata"
+        android:visibility="gone"
+        android:text="You do not have any documents"
+        android:textColor="@color/blue"
+        android:textSize="20dp" />
+
+    <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hscv"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="20dp"
+                android:text="_______________________________________________________________________________________________________________________"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
+
+    <ScrollView
+        android:layout_width="920dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/statusRV"
+            android:layout_width="820dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="40dp" />
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

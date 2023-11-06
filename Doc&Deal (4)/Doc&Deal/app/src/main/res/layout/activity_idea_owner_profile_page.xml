@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdeaOwnerProfilePage">
+
+    <ImageView
+        android:id="@+id/IOprofilePic"
+        android:layout_width="96dp"
+        android:layout_height="105dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="556dp"
+        android:layout_marginBottom="279dp"
+        android:background="@drawable/profile"
+        />
+
+    <TextView
+        android:id="@+id/IOuserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="468dp"
+        android:layout_toEndOf="@+id/IOprofilePic"
+        android:hint="Username" />
+
+    <TextView
+        android:id="@+id/IOfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/IOemail"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="467dp"
+        android:layout_marginBottom="73dp"
+        android:hint="Field" />
+
+    <TextView
+        android:id="@+id/IOphoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-58dp"
+        android:layout_marginBottom="183dp"
+        android:layout_toStartOf="@+id/IOemail"
+        android:hint="Phone Number" />
+
+    <TextView
+        android:id="@+id/IOemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="531dp"
+        android:layout_marginBottom="214dp"
+        android:hint="Email" />
+
+    <Button
+        android:id="@+id/creatorEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="96dp"
+        android:text="Edit" />
+
+</RelativeLayout>

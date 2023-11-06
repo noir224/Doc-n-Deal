@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="275dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="700dp"
+        android:fontFamily="@font/armata"
+        android:text="Team Member's Name"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/teamMemberName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Team Member Name"
+        android:inputType="textLongMessage|textPersonName"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="275dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/teamMemberName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="700dp"
+        android:fontFamily="@font/armata"
+        android:text="Team Member's Capabilities"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/tc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="72dp"
+        android:fontFamily="@font/armata"
+        android:text="Front-End Developer"
+        />
+
+    <CheckBox
+        android:id="@+id/tc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tc1"
+        android:text="Back-End Developer"
+        android:layout_marginStart="72dp"
+        android:fontFamily="@font/armata"
+        android:textAlignment="textStart"
+        />
+
+    <CheckBox
+        android:id="@+id/tc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tc2"
+        android:text="UI Developer"
+        android:layout_marginStart="72dp"
+        android:fontFamily="@font/armata"
+        android:textAlignment="textStart"
+        />
+
+    <CheckBox
+        android:id="@+id/tc4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tc3"
+        android:text="Database Developer"
+        android:layout_marginStart="72dp"
+        android:fontFamily="@font/armata"
+        android:textAlignment="textStart"
+        />
+
+    <CheckBox
+        android:id="@+id/tc5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tc4"
+        android:layout_marginStart="72dp"
+        android:fontFamily="@font/armata"
+        android:text="Security Expert "
+        android:textAlignment="textStart"
+        />
+
+    <ImageView
+        android:id="@+id/deleteMember"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/tc1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="66dp"
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        app:tint="@color/lightblue" />
+</RelativeLayout>

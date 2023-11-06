@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CreatorSignUp">
+
+
+    <TextView
+        android:id="@+id/textViewsu"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="345dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="221dp"
+        android:clickable="true"
+        android:fontFamily="@font/armata"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/blue"
+        android:textColorHighlight="#6E85B2"
+        android:textSize="45dp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/stuimg"
+        android:layout_width="136dp"
+        android:layout_height="138dp"
+        android:layout_below="@+id/textViewsu"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="444dp"
+        android:layout_marginTop="22dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/CreatorUsernameSignUp"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/stuimg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/CreatorEmailSignUp"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/CreatorUsernameSignUp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/CreatorPassSignUp"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/CreatorEmailSignUp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:paddingRight="20dp" />
+
+
+    <EditText
+        android:id="@+id/CreatorcPassSignUp"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/CreatorPassSignUp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="ConfirmPassword"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:paddingRight="20dp" />
+
+
+    <Button
+        android:id="@+id/SignUpCreatorbtn"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CreatorcPassSignUp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="427dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/red"
+        android:text="SignUp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/LoginCreatorbtn"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SignUpCreatorbtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="427dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="Login"
+        android:textColor="#FAFAFA" />
+
+    <TextView
+        android:id="@+id/secstusign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

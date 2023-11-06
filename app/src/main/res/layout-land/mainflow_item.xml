@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/armata"
+        android:text="UA"
+        android:textColor="@color/semipurple"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ua"
+        android:layout_width="358dp"
+        android:layout_height="196dp"
+        android:layout_below="@+id/textView37"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="User Action"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:selectAllOnFocus="true"
+        android:shadowColor="@color/blue"
+        android:textIsSelectable="true" />
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ua"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/armata"
+        android:text="SR"
+        android:textColor="@color/semipurple"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sr"
+        android:layout_width="358dp"
+        android:layout_height="196dp"
+        android:layout_below="@+id/textView37"
+        android:layout_toEndOf="@id/ua"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="System Response"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:selectAllOnFocus="true"
+        android:shadowColor="@color/blue"
+        android:textIsSelectable="true" />
+
+
+    <Button
+        android:id="@+id/uploadscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/textView37"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/sr"
+        android:backgroundTint="@color/lightblue"
+        android:text="Upload Screen"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/uploadscreentext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadscreen"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/sr"
+        android:fontFamily="@font/armata"
+        android:text="UA"
+        android:textColor="@color/semipurple"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/deleterow"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/uploadscreentext"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/sr"
+        android:text="Delete Row"
+        android:textColor="@color/lightblue"
+        android:textSize="18dp"
+        app:strokeColor="@color/lightblue"
+        app:strokeWidth="2dp" />
+
+</RelativeLayout>

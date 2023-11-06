@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".SequenceDiagramHelp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="1023dp"
+        android:layout_height="7500dp">
+
+
+        <TextView
+            android:id="@+id/sdhtitle"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/blue"
+            android:fontFamily="@font/armata"
+            android:paddingTop="20dp"
+            android:text="SEQUENCE DIAGRAM EXPLAINED"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sdhbackarrow"
+            android:layout_width="51dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="14dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/sdhdefinetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdhtitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="77dp"
+            android:text="Sequence Diagram Definition"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/sdhdefinedef"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhdefinetitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Sequence diagrams, commonly used by developers, model the interactions between objects in a single use case.
+
+simply put, a sequence diagram shows different parts of a system work in a ‘sequence’ to get something done."
+            android:textSize="23dp" />
+
+
+        <TextView
+            android:id="@+id/sdhimportitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdhdefinedef"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="Sequence Diagram Importance"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sdhimportext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhimportitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="They illustrate how the different parts of a system interact with each other to carry out a function, and the order in which the interactions occur when a particular use case is executed."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/sdhobjtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdhimportext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="Sequence Diagram Components"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sdhobjtext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhobjtitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="A sequence diagram is structured in such a way that it represents a timeline which begins at the top and descends gradually to mark the sequence of interactions. Each object has a column and the messages exchanged between them are represented by arrows.
+it consists of various parts"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:id="@+id/sdhobjstable"
+            android:layout_width="810dp"
+            android:layout_height="1196dp"
+            android:layout_below="@+id/sdhobjtext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="114dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/seqobjs" />
+
+        <TextView
+            android:id="@+id/sdhobjothertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdhobjstable"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="Sequence Diagram More Components"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sdhobjothertext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhobjothertitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="In a sequence diagram, an interaction between two objects occurs when one object sends a message to another. The use of the activation bar on the lifelines of the Message Caller (the object that sends the message) and the Message Receiver (the object that receives the message) indicates that both are active/is instantiated during the exchange of the message."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/sdhmesstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdhobjothertext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="Message Arrows"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sdhcomp1title"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhmesstitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Synchronous message"
+            android:textSize="23dp"
+            android:textStyle="italic|bold"
+
+            />
+        <TextView
+            android:id="@+id/sdhcomp1text"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp1title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="As shown in the activation bars example, a synchronous message is used when the sender waits for the receiver to process the message and return before carrying on with another message.  The arrowhead used to indicate this type of message is a solid one, like the one below."
+            android:textSize="23dp"
+            />
+
+        <ImageView
+            android:id="@+id/sdhcomp1pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdhcomp1text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="349dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/comp1" />
+
+        <TextView
+            android:id="@+id/sdhcomp2title"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp1pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Asynchronous message"
+            android:textSize="23dp"
+            android:textStyle="italic|bold"
+
+            />
+        <TextView
+            android:id="@+id/sdhcomp2text"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp2title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="An asynchronous message is used when the message caller does not wait for the receiver to process the message and return before sending other messages to other objects within the system. The arrowhead used to show this type of message is a line arrow like shown in the example below."
+            android:textSize="23dp"
+            />
+
+        <ImageView
+            android:id="@+id/sdhcomp2pic"
+            android:layout_width="606dp"
+            android:layout_height="390dp"
+            android:layout_below="@+id/sdhcomp2text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="224dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/comp2" />
+
+        <TextView
+            android:id="@+id/sdhcomp3title"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp2pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Return message"
+            android:textSize="23dp"
+            android:textStyle="italic|bold"
+
+            />
+        <TextView
+            android:id="@+id/sdhcomp3text"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp3title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="A return message is used to indicate that the message receiver is done processing the message and is returning control over to the message caller. Return messages are optional notation pieces, for an activation bar that is triggered by a synchronous message always implies a return message."
+            android:textSize="23dp"
+            />
+
+        <ImageView
+            android:id="@+id/sdhcomp3pic"
+            android:layout_width="606dp"
+            android:layout_height="390dp"
+            android:layout_below="@+id/sdhcomp3text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="224dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/comp3" />
+
+
+        <TextView
+            android:id="@+id/sdhcomp4title"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp3pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Participant creation message"
+            android:textSize="23dp"
+            android:textStyle="italic|bold"
+
+            />
+        <TextView
+            android:id="@+id/sdhcomp4text"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp4title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Objects do not necessarily live for the entire duration of the sequence of events. Objects or participants can be created according to the message that is being sent.
+
+The dropped participant box notation can be used when you need to show that the particular participant did not exist until the create call was sent.  If the created participant does something immediately after its creation, you should add an activation box right below the participant box."
+            android:textSize="23dp"
+            />
+
+        <ImageView
+            android:id="@+id/sdhcomp4pic"
+            android:layout_width="533dp"
+            android:layout_height="371dp"
+            android:layout_below="@+id/sdhcomp4text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="252dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/comp4" />
+
+        <TextView
+            android:id="@+id/sdhcomp5title"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp4pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Participant destruction message"
+            android:textSize="23dp"
+            android:textStyle="italic|bold"
+
+            />
+        <TextView
+            android:id="@+id/sdhcomp5text"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp5title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Likewise, participants when no longer needed can also be deleted from a sequence diagram. This is done by adding an ‘X’ at the end of the lifeline of the said participant."
+            android:textSize="23dp"
+            />
+
+        <ImageView
+            android:id="@+id/sdhcomp5pic"
+            android:layout_width="606dp"
+            android:layout_height="390dp"
+            android:layout_below="@+id/sdhcomp5text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="224dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/comp5" />
+
+        <TextView
+            android:id="@+id/sdhcomp6title"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp5pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Reflexive message"
+            android:textSize="23dp"
+            android:textStyle="italic|bold"
+
+            />
+        <TextView
+            android:id="@+id/sdhcomp6text"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp6title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="When an object sends a message to itself, it is called a reflexive message. It is indicated with a message arrow that starts and ends at the same lifeline as shown in the example below."
+            android:textSize="23dp"
+            />
+
+        <ImageView
+            android:id="@+id/sdhcomp6pic"
+            android:layout_width="419dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdhcomp6text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="311dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/comp6" />
+
+        <TextView
+            android:id="@+id/sdhtitlehowto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhcomp6pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/blue"
+            android:fontFamily="@font/armata"
+            android:padding="5dp"
+            android:text="HOW TO DRAW A SEQUENCE DIAGRAM"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sdhmainhowto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdhtitlehowto"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="How to Create a Sequence Diagram"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sdhhowtousecasetitle"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhmainhowto"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> Reference the UseCase Diagram"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/sdhhowtousecasetext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhhowtousecasetitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="21dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="A sequence diagram represents the scenario or flow of events in one single use case. The message flow of the sequence diagram is based on the narrative of the particular use case.
+
+Then, before you start drawing the sequence diagram or decide what interactions should be included in it, you need to draw the use case diagram and ready a comprehensive description of what the particular use case does."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/sdhhowto2title"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhhowtousecasetext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> Decide on a Specific Usecase and Go by it's steps"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/sdhhowto2text"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhhowto2title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="21dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Before drawing the sequence diagram, it’s necessary to identify the objects or actors that would be involved in your certain usecase,
+then Once you identify the objects, it is then important to write a detailed description on what the use case does. From that, you can easily figure out the interactions (that should go in the sequence diagram) that would occur between the objects above, once the use case is executed.
+From each of these steps, you can easily specify what messages should be exchanged between the objects in the sequence diagram. Once it’s clear, you can go ahead and start drawing the sequence diagram."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/sdhhowtoexampletext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhhowto2text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Here is an example of a Sequence Diagram for a use case called Sign Up"
+            android:textAlignment="center"
+            android:textSize="23dp"
+            android:textStyle="italic|bold" />
+
+        <ImageView
+            android:id="@+id/sdhexamplepic"
+            android:layout_width="922dp"
+            android:layout_height="569dp"
+            android:layout_below="@+id/sdhhowtoexampletext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/examplesd" />
+
+        <TextView
+            android:id="@+id/sdhmistakestitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdhexamplepic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="Sequence Diagram Common Mistakes"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sdhmis1"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhmistakestitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Adding too much detail. This clutters up the diagram and makes it difficult to read."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/sdhmis2"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhmis1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Obsolete and out of date sequence diagrams that are irrelevant when compared to the interfaces, actual architectures etc. of the system. Don’t forget to replace them or modify them."
+            android:textSize="23dp"
+
+            />
+
+        <TextView
+            android:id="@+id/sdhmis3"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhmis2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Leaving no blank space between the use case text and the message arrow; this makes it difficult for anyone to read the diagram."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/sdhmis4"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdhmis3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Not considering the origins of message arrows carefully."
+            android:textSize="23dp" />
+
+
+
+    </RelativeLayout>
+</ScrollView>

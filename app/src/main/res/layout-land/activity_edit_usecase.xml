@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rledituc">
+
+        <TextView
+            android:id="@+id/ucname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/armata"
+            android:text="Usecase Name"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ucname"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/armata"
+            android:text="Usecase Number"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ucnum"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView24"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Usecasenumber"
+            android:inputType="number"
+            android:padding="15dp"
+            android:shadowColor="@color/blue" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ucname"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/ucnum"
+            android:fontFamily="@font/armata"
+            android:text="Creation Date"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ucdate"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView25"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/ucnum"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Creation Date"
+            android:inputType="none"
+            android:padding="15dp"
+            android:shadowColor="@color/blue"
+            android:windowSoftInputMode="stateHidden" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ucname"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/ucdate"
+            android:fontFamily="@font/armata"
+            android:text="Author Name"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ucauthor"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView26"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/ucdate"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Author Name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:shadowColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ucnum"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/armata"
+            android:text="Precondition"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/helpprecond"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/ucnum"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/textView27"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowprecond"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@id/ucname"
+            android:layout_marginStart="-10dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="125dp"
+            android:layout_toEndOf="@id/helpprecond"
+            android:visibility="gone"
+            android:alpha="0.6"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textprecond"
+            android:layout_width="591dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ucname"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="125dp"
+            android:layout_toEndOf="@id/arrowprecond"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:visibility="gone"
+            android:text="What is the condition that is required for this usecase to start its flow. The condition could be a specific screen that is opened, an action has been done by user...etc"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/precond"
+            android:layout_width="968dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView27"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Precondition"
+            android:inputType="textLongMessage"
+            android:padding="15dp"
+            android:shadowColor="@color/blue" />
+
+
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precond"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/armata"
+            android:text="Successful Post Condition"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/helppostcond"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/precond"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/textView28"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowpostcond"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@id/precond"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/helppostcond"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textpostcond"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precond"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/arrowpostcond"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:visibility="gone"
+            android:text="How do you know that the task was successful?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/postcond"
+            android:layout_width="968dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView28"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Successful Post Condition"
+            android:inputType="textLongMessage"
+            android:padding="15dp"
+            android:shadowColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postcond"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/armata"
+            android:text="Actors"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/plusactor"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/postcond"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/textView29"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/actors"
+            android:layout_width="968dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/textView29"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/actorslist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actors"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ucname"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/ucauthor"
+            android:fontFamily="@font/armata"
+            android:text="Priority"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/priority"
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:layout_below="@id/textView30"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/ucauthor"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actorslist"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/armata"
+            android:text="Related Use Cases"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/plusrelated"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/actorslist"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/textView31"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/realted"
+            android:layout_width="968dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/textView31"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/relatedlist"
+            android:layout_width="968dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/realted"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relatedlist"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/armata"
+            android:text="Main Flow"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/helpmainflow"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/relatedlist"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/textView32"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowmainflow"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@id/relatedlist"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/helpmainflow"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textmainflow"
+            android:layout_width="540dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relatedlist"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/arrowmainflow"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="The main process that the user should go through to perform the task successfull"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView32"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/armata"
+            android:text="User Action"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ualine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView33"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/armata"
+            android:text="________________________________________________________"
+            android:textAlignment="textStart"
+            android:textColor="@color/lightblue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/srline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView33"
+            android:layout_marginStart="120dp"
+            android:layout_toEndOf="@id/ualine"
+            android:fontFamily="@font/armata"
+            android:text="________________________________________________________"
+            android:textAlignment="textStart"
+            android:textColor="@color/lightblue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView32"
+            android:layout_marginStart="400dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/textView33"
+            android:fontFamily="@font/armata"
+            android:text="System Response"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainflowlistrv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ualine"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/mainflowlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainflowlistrv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:id="@+id/plusmain"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@id/mainflowlist"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="470dp"
+            android:layout_marginTop="17dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/mfline"
+            android:layout_width="968dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plusmain"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/armata"
+            android:text="________________________________________________________________________________________________________________________________"
+            android:textAlignment="textStart"
+            android:textColor="@color/lightblue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mfline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/armata"
+            android:text="Alternatives"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/helpalt"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/mfline"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/plusalt"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+        <ImageView
+            android:id="@+id/plusalt"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/mfline"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/textView35"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <ImageView
+            android:id="@+id/arrowalt"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@id/plusmain"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="31dp"
+            android:layout_toEndOf="@id/helpalt"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textalt"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plusmain"
+            android:layout_marginStart="-21dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/arrowalt"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:visibility="gone"
+            android:text="Anything that could happens and interrupts achieving the task successfull"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/altlistrv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView35"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/altlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/altlistrv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:id="@+id/altline"
+            android:layout_width="968dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/altlist"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/armata"
+            android:text="________________________________________________________________________________________________________________________________"
+            android:textAlignment="textStart"
+            android:textColor="@color/lightblue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/helpstatetransition"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/altline"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/uploadstd"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <Button
+            android:id="@+id/uploadstd"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/altline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/lightblue"
+            android:text="Upload State Transition Diagram"
+            android:textSize="18dp" />
+        <ImageView
+            android:id="@+id/stdpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uploadstd"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:maxWidth="968dp"
+            />
+
+        <Button
+            android:id="@+id/uploadmainseq"
+            android:layout_width="460dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/stdpic"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/lightblue"
+            android:text="Upload Mainflow's Sequence Diagram"
+            android:textSize="18dp" />
+
+
+        <ImageView
+            android:id="@+id/helpsequencedigram"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/altline"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="118dp"
+            android:layout_toEndOf="@id/uploadmainseq"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/mainseqpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uploadmainseq"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:maxWidth="968dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/altuploadsrv"
+            android:layout_width="968dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainseqpic"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <Button
+            android:id="@+id/saveuc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/altuploadsrv"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="450dp"
+            android:text="Save"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+</ScrollView>

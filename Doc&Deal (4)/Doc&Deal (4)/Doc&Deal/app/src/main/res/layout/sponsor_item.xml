@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="155dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:longClickable="true"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="10dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightblue"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logoOFsponsor"
+                android:layout_width="70dp"
+                android:layout_height="69dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="18dp"
+                android:elevation="2dp"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/nameOFspons"
+                android:layout_width="124dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/logoOFsponsor"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:autoSizeMaxTextSize="15sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="Sponsor name"
+                android:textAlignment="center"
+                android:textColor="@color/darkblue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/categOFspons"
+                android:layout_width="140dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/nameOFspons"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="2dp"
+                android:autoSizeMaxTextSize="11dp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="category"
+                android:textAlignment="center"
+                android:textColor="@color/darkblue" />
+
+            <Button
+                android:id="@+id/viewmore"
+                android:layout_width="105dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/categOFspons"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="12dp"
+                android:autoSizeMaxTextSize="16dp"
+                android:autoSizeMinTextSize="9dp"
+                android:autoSizeTextType="uniform"
+                android:text="VIEW MORE"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

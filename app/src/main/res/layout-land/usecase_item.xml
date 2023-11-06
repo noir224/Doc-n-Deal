@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/armata"
+        android:text="Usecase Name"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ucname"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView23"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Name"
+        android:inputType="textShortMessage"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/ucname"
+        android:fontFamily="@font/armata"
+        android:text="Usecase Number"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ucnum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView23"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/ucname"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Usecase Number"
+        android:inputType="number"
+        android:padding="15dp"
+        android:shadowColor="@color/blue"
+        android:text="UC" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/ucnum"
+        android:fontFamily="@font/armata"
+        android:text="Creation Date"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ucdate"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView23"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/ucnum"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Creation Date"
+        android:inputType="date"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/ucdate"
+        android:fontFamily="@font/armata"
+        android:text="Author Name"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ucauthor"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView23"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/ucdate"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Author Name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ucname"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/armata"
+        android:text="Precondition"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/helpprecond"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/ucname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/textView27"
+        android:src="@drawable/ic_baseline_help_outline_24" />
+
+    <ImageView
+        android:id="@+id/arrowprecond"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/ucname"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/helpprecond"
+        android:alpha="0.6"
+        android:src="@drawable/ic_baseline_arrow_left_24" />
+
+    <TextView
+        android:id="@+id/textprecond"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ucname"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@id/arrowprecond"
+        android:alpha="0.6"
+        android:background="@color/lightblue"
+        android:maxWidth="400dp"
+        android:maxHeight="250dp"
+        android:padding="10dp"
+        android:shadowRadius="10"
+        android:text="What is the condition that is required for this usecase to start its flow. The condition could be a specific screen that is opened, an action has been done by user...etc"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/precond"
+        android:layout_width="740dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView27"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Precondition"
+        android:inputType="textLongMessage"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+
+    <Button
+        android:id="@+id/precondscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/ucname"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@id/precond"
+        android:backgroundTint="@color/lightblue"
+        android:text="Upload Screen"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/uploadprecondscreentext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/precondscreen"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/precond"
+        android:fontFamily="@font/armata"
+        android:text="UA"
+        android:textColor="@color/semipurple"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/precond"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/armata"
+        android:text="Successful Post Condition"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/helppostcond"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/precond"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/textView28"
+        android:src="@drawable/ic_baseline_help_outline_24" />
+
+    <ImageView
+        android:id="@+id/arrowpostcond"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/precond"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/helppostcond"
+        android:alpha="0.6"
+        android:src="@drawable/ic_baseline_arrow_left_24" />
+
+    <TextView
+        android:id="@+id/textpostcond"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/precond"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/arrowpostcond"
+        android:alpha="0.6"
+        android:background="@color/lightblue"
+        android:maxWidth="400dp"
+        android:maxHeight="250dp"
+        android:padding="10dp"
+        android:shadowRadius="10"
+        android:text="How do you know that the task was successful?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/postcond"
+        android:layout_width="966dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView28"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Successful Post Condition"
+        android:inputType="textLongMessage"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postcond"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/armata"
+        android:text="Actors"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/actors"
+        android:layout_width="455dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textView29"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Actors"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postcond"
+        android:layout_toEndOf="@id/actors"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/armata"
+        android:text="Priority"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/priority"
+        android:layout_width="415dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/textView30"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/actors"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actors"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/armata"
+        android:text="Related Use Cases"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/realted"
+        android:layout_width="966dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textView31"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Related Use Cases"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/realted"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/armata"
+        android:text="Main Flow"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/helpmainflow"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/realted"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/textView32"
+        android:src="@drawable/ic_baseline_help_outline_24" />
+    <ImageView
+        android:id="@+id/arrowmainflow"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/realted"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/helpmainflow"
+        android:alpha="0.6"
+        android:src="@drawable/ic_baseline_arrow_left_24" />
+
+    <TextView
+        android:id="@+id/textmainflow"
+        android:layout_width="540dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/realted"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/arrowmainflow"
+        android:alpha="0.6"
+        android:background="@color/lightblue"
+
+        android:maxHeight="250dp"
+        android:padding="10dp"
+        android:shadowRadius="10"
+        android:text="The main process that the user should go through to perform the task successfull"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/uploadmainsequence"
+        android:layout_width="420dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/textView32"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/lightblue"
+        android:text="Upload Sequnece Diagram of Main Flow"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/uploadseqmainscreentext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadmainsequence"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/precond"
+        android:fontFamily="@font/armata"
+        android:text="UA"
+        android:textColor="@color/semipurple"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/helpseq"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/textView32"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@id/uploadmainsequence"
+        android:src="@drawable/ic_baseline_help_outline_24" />
+    <ImageView
+        android:id="@+id/arrowseq"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/textView32"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/helpseq"
+        android:alpha="0.6"
+        android:src="@drawable/ic_baseline_arrow_left_24" />
+
+    <TextView
+        android:id="@+id/textseq"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView32"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/arrowseq"
+        android:alpha="0.6"
+        android:background="@color/lightblue"
+        android:maxHeight="250dp"
+        android:padding="10dp"
+        android:shadowRadius="10"
+        android:text="Press on the following link to understand what is a sequence diagram https://www.youtube.com/watch?v=pCK6prSq8aw"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadseqmainscreentext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/armata"
+        android:text="User Action"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ualine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView33"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="140dp"
+        android:fontFamily="@font/armata"
+        android:text="_________________________________________"
+        android:textAlignment="textStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/srline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView33"
+        android:layout_marginStart="170dp"
+        android:layout_toEndOf="@id/ualine"
+        android:fontFamily="@font/armata"
+        android:text="_________________________________________"
+        android:textAlignment="textStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadseqmainscreentext"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/textView33"
+        android:fontFamily="@font/armata"
+        android:text="System Response"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/mainflowlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView33"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/plusmain"
+        android:layout_width="92dp"
+        android:layout_height="79dp"
+        android:layout_below="@id/mainflowlist"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="497dp"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+        app:tint="@color/semipurple" />
+    <TextView
+        android:id="@+id/mfline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plusmain"
+        android:layout_marginStart="140dp"
+       android:layout_alignParentStart="true"
+        android:fontFamily="@font/armata"
+        android:text="_____________________________________________________________________________________--_______________________________"
+        android:textAlignment="textStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mfline"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/armata"
+        android:text="Alternatives"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/helpalt"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/plusmain"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/plusalt"
+        android:src="@drawable/ic_baseline_help_outline_24" />
+    <ImageView
+        android:id="@+id/plusalt"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/plusmain"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/textView35"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+        app:tint="@color/semipurple" />
+    <ImageView
+        android:id="@+id/arrowalt"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/plusmain"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/helpalt"
+        android:alpha="0.6"
+        android:src="@drawable/ic_baseline_arrow_left_24" />
+
+    <TextView
+        android:id="@+id/textalt"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plusmain"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/arrowalt"
+        android:alpha="0.6"
+        android:background="@color/lightblue"
+        android:maxWidth="400dp"
+        android:maxHeight="250dp"
+        android:padding="10dp"
+        android:shadowRadius="10"
+        android:text="Anything that could happens and interrupts achieving the task successfull"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:id="@+id/altlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ualine"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"></LinearLayout>
+    <TextView
+        android:id="@+id/altline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/altlist"
+        android:layout_marginStart="140dp"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/armata"
+        android:text="_____________________________________________________________________________________--_______________________________"
+        android:textAlignment="textStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/std"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/altline"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/lightblue"
+        android:text="Upload State Transition Diagram"
+        android:textSize="18dp" />
+
+</RelativeLayout>

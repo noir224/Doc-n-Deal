@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:isScrollContainer="false"
+    tools:context=".NewProject">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/createProjLogo"
+                android:layout_width="123dp"
+                android:layout_height="119dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="462dp"
+                android:layout_marginTop="37dp"
+                android:src="@drawable/addlogo"
+                />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/createProjLogo"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="15dp"
+                android:text="Project Name*"
+                android:textSize="24dp"
+                android:textColor="@color/semipurple"/>
+
+            <EditText
+                android:id="@+id/createProjName1"
+                android:layout_width="415dp"
+                android:layout_height="61dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="56dp"
+                android:background="@drawable/custom_input"
+                android:layout_marginTop="3dp"
+                android:hint="Project Name"
+                android:padding="8dp"
+                />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/createProjName1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="15dp"
+                android:text="Date*"
+                android:textSize="24dp"
+                android:textColor="@color/semipurple"/>.
+
+            <EditText
+                android:id="@+id/createProjDate1"
+                android:layout_width="415dp"
+                android:layout_height="61dp"
+                android:layout_below="@+id/textView1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="3dp"
+                android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+                android:padding="8dp"
+                android:background="@drawable/custom_input"
+                android:inputType="none"
+                android:windowSoftInputMode="stateHidden"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/createProjDate1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="15dp"
+                android:text="Website/Social Media Link"
+                android:textSize="24dp"
+                android:textColor="@color/semipurple"/>.
+
+            <EditText
+                android:id="@+id/createProjLink1"
+                android:layout_width="924dp"
+                android:layout_height="61dp"
+                android:inputType="textLongMessage"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="3dp"
+                android:padding="8dp"
+                android:background="@drawable/custom_input"
+               android:hint="Website/Social Media Link"
+                android:windowSoftInputMode="stateHidden"
+                />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/createProjLogo"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="482dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@id/textView"
+                android:backgroundTint="@color/white"
+                android:text="Category*"
+                android:textColor="@color/semipurple"
+                android:textSize="24dp" />
+
+
+            <Spinner
+                android:id="@+id/createProjAC"
+                android:layout_width="415dp"
+                android:layout_height="61dp"
+                android:layout_below="@id/textView5"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/createProjName1"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:spinnerMode="dropdown" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/createProjName1"
+                android:layout_toEndOf="@+id/createProjDate1"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="15dp"
+                android:text="Version*"
+                android:textSize="24dp"
+                android:textColor="@color/semipurple"/>.
+
+            <EditText
+                android:id="@+id/createProjVersion1"
+                android:layout_width="150dp"
+                android:layout_height="61dp"
+                android:layout_below="@+id/textView3"
+                android:layout_toEndOf="@+id/createProjDate1"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="3dp"
+                android:padding="8dp"
+                android:background="@drawable/custom_input"
+                android:hint="Version"
+                android:windowSoftInputMode="stateHidden"
+                />
+
+            <Switch
+                android:id="@+id/makeprivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/createProjAC"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="55dp"
+                android:layout_toEndOf="@id/createProjVersion1"
+                android:checked="true"
+                android:fontFamily="@font/armata"
+                android:text="Private  "
+                android:textColor="@color/semipurple"
+                android:textSize="24dp"
+                android:thumbTint="@color/semipurple"
+                android:trackTint="@color/blue" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/createProjLink1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="15dp"
+                android:text="Description*"
+                android:textSize="24dp"
+                android:textColor="@color/semipurple"/>.
+
+            <EditText
+                android:id="@+id/createProjDesc1"
+                android:layout_width="924dp"
+                android:layout_height="185dp"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="3dp"
+                android:hint="Description*"
+                android:padding="8dp"
+                android:gravity="start|top"
+                android:background="@drawable/custom_long_input"
+                android:inputType="textMultiLine"
+                android:windowSoftInputMode="stateHidden"
+                />
+
+
+
+            <Button
+                android:id="@+id/createProjButton"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/createProjDesc1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="429dp"
+                android:layout_marginTop="27dp"
+                android:backgroundTint="@color/red"
+                android:text="Create" />
+
+            <Button
+                android:id="@+id/addProjButton"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/createProjDesc1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="429dp"
+                android:layout_marginTop="27dp"
+                android:backgroundTint="@color/red"
+                android:text="Add project" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

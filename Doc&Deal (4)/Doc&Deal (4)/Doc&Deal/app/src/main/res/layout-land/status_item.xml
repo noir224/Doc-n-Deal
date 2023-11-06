@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvitem"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stagetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/armata"
+                android:text="Stage 1 (Proposal)"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/stageComment"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="No comment yet"
+                android:textSize="14dp"
+                android:padding="15dp"
+                android:background="#C6CEDF"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/armata"
+                android:layout_marginStart="20dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

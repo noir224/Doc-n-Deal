@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/SharedProjectDetailsLayout"
+    tools:context=".SharedProjectDetails">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SharedProjectDetailsLogo"
+        android:layout_width="162dp"
+        android:layout_height="148dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="49dp"
+        android:src="@drawable/addlogo" />
+
+    <TextView
+        android:id="@+id/SharedProjectDetailsTitle"
+        android:layout_width="235dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="439dp"
+        android:layout_toEndOf="@+id/SharedProjectDetailsLogo"
+        android:fontFamily="@font/armata"
+        android:text="Projects"
+        android:textAlignment="viewStart"
+        android:textColor="@color/darkblue"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SharedProjectDetailsDesc"
+        android:layout_width="733dp"
+        android:layout_height="116dp"
+        android:layout_below="@+id/SharedProjectDetailsTitle"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/SharedProjectDetailsLogo"
+        android:fontFamily="@font/armata"
+        android:text="Projects"
+        android:textAlignment="viewStart"
+        android:textColor="@color/blue"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="809dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SharedProjectDetailsDesc"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/armata"
+        android:text="_________________________________________________________________________________"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="16dp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shareddocdetailsRV"
+                android:layout_width="600dp"
+                android:layout_height="400dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progBarSharedProjectDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="530dp"
+                android:layout_marginTop="182dp"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorColor="@color/semipurple" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

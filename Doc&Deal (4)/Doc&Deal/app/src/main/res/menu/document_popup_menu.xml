@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/deletedoc"
+        android:title="Delete"/>
+    <item
+        android:id="@+id/download"
+        android:title="Download as PDF"/>
+    <item
+        android:id="@+id/shareemail"
+        android:title="Share By email"/>
+    <item
+        android:id="@+id/sharesponsor"
+        android:title="Send to Sponsor"/>
+</menu>

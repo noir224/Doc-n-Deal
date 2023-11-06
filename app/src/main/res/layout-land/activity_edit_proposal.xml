@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/PROD">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="350dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/armata"
+            android:gravity="center"
+            android:text="Proposal Document"
+            android:textAlignment="center"
+            android:textColor="@color/semipurple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/proposalFinish"
+            android:layout_width="56dp"
+            android:layout_height="68dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            app:srcCompat="@drawable/ic_baseline_close_24"
+            app:tint="@color/red" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="700dp"
+            android:fontFamily="@font/armata"
+            android:text="Document name"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/docNameProp"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textLongMessage|textPersonName"
+            android:padding="15dp"
+            android:shadowColor="@color/blue"
+            android:text="Untitled"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="200dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/docNameProp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Project Objectives"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/projectObjectives"
+            android:layout_width="871dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="81dp"
+            android:background="@drawable/custom_long_input"
+            android:elevation="8dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Project Objectives"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:selectAllOnFocus="true"
+            android:shadowColor="@color/blue"
+            android:textIsSelectable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="235dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/projectObjectives"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="The Need of Project"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/needsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/needRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/needsList"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/plusneeds"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/needRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/plusneeds"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Expected Outputs"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/outputList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/outputRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/outputList"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/plusoutputs"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/outputRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/plusoutputs"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="UN Sustainable Goals"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/un1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:text="GOAL 1: No Poverty"
+            android:layout_marginStart="49dp"
+            android:fontFamily="@font/armata"
+            android:textAlignment="textStart"
+            />
+
+        <CheckBox
+            android:id="@+id/un2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un1"
+            android:text="GOAL 2: Zero Hunger"
+            android:layout_marginStart="49dp"
+            android:fontFamily="@font/armata"
+            android:textAlignment="textStart"
+            />
+
+        <CheckBox
+            android:id="@+id/un3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un2"
+            android:text="GOAL 3: Good Health and Well-being"
+            android:layout_marginStart="49dp"
+            android:fontFamily="@font/armata"
+            android:textAlignment="textStart"
+            />
+
+        <CheckBox
+            android:id="@+id/un4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un3"
+            android:text="GOAL 4: Quality Education"
+            android:layout_marginStart="49dp"
+            android:fontFamily="@font/armata"
+            android:textAlignment="textStart"
+            />
+
+        <CheckBox
+            android:id="@+id/un5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un4"
+            android:text="GOAL 5: Gender Equality"
+            android:layout_marginStart="49dp"
+            android:fontFamily="@font/armata"
+            android:textAlignment="textStart"
+            />
+
+        <CheckBox
+            android:id="@+id/un6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un5"
+            android:text="GOAL 6: Clean Water and Sanitation"
+            android:layout_marginStart="49dp"
+            android:fontFamily="@font/armata"
+            android:textAlignment="textStart"
+            />
+
+        <CheckBox
+            android:id="@+id/un7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un6"
+            android:text="GOAL 7: Affordable and Clean Energy"
+            android:layout_marginStart="49dp"
+            android:fontFamily="@font/armata"
+            android:textAlignment="textStart"
+            />
+
+        <CheckBox
+            android:id="@+id/un8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un7"
+            android:text="GOAL 8: Decent Work and Economic Growth"
+            android:layout_marginStart="49dp"
+            android:fontFamily="@font/armata"
+            android:textAlignment="textStart"
+            />
+
+        <CheckBox
+            android:id="@+id/un9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un8"
+            android:text="GOAL 9: Industry, Innovation and Infrastructure"
+            android:layout_marginStart="49dp"
+            android:fontFamily="@font/armata"
+            android:textAlignment="textStart"
+
+            />
+
+        <CheckBox
+            android:id="@+id/un10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_marginStart="213dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/un1"
+            android:fontFamily="@font/armata"
+            android:text="GOAL 10: Reduced Inequality"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+            android:id="@+id/un11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un10"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/un2"
+            android:fontFamily="@font/armata"
+            android:text="GOAL 11: Sustainable Cities and Communities"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+            android:id="@+id/un12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un11"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/un3"
+            android:fontFamily="@font/armata"
+            android:text="GOAL 12: Responsible Consumption and Production"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+            android:id="@+id/un13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un12"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@+id/un4"
+            android:fontFamily="@font/armata"
+            android:text="GOAL 13: Climate Action"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+            android:id="@+id/un14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un13"
+            android:layout_marginStart="173dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/un5"
+            android:fontFamily="@font/armata"
+            android:text="GOAL 14: Life Below Water"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+            android:id="@+id/un15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un14"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@+id/un6"
+            android:fontFamily="@font/armata"
+            android:text="GOAL 15: Life on Land"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+            android:id="@+id/un16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un15"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/un7"
+            android:fontFamily="@font/armata"
+            android:text="GOAL 16: Peace and Justice Strong Institutions"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+            android:id="@+id/un17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un16"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@+id/un8"
+            android:fontFamily="@font/armata"
+            android:text="GOAL 17: Partnerships to achieve the Goal"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/un9"
+            android:layout_marginStart="-380dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/un9"
+            android:fontFamily="@font/armata"
+            android:text="Key Features"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/featuresList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/featuresRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/featuresList"
+            android:layout_marginTop="5dp" />
+        <ImageView
+            android:id="@+id/plusfeatures"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/featuresRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/plusfeatures"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="700dp"
+            android:fontFamily="@font/armata"
+            android:text="Team Members"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/teamlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView16"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"></LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/teamRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teamlist"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/plusmember"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/teamRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:tint="@color/semipurple"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/plusmember"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="700dp"
+            android:fontFamily="@font/armata"
+            android:text="APIs"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/APIList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/apiRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/APIList"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/plusAPI"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/apiRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:tint="@color/semipurple"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/plusAPI"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="700dp"
+            android:fontFamily="@font/armata"
+            android:text="Algorithms"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView12"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Searching Algorithms:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <CheckBox
+            android:id="@+id/ser1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView20"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="214dp"
+            android:fontFamily="@font/armata"
+            android:text="Sequential Search"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+            android:id="@+id/ser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ser1"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="214dp"
+            android:fontFamily="@font/armata"
+            android:text="Binary Search"
+            android:textAlignment="textStart" />
+
+
+        <CheckBox
+            android:id="@+id/ser3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView20"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/ser1"
+            android:fontFamily="@font/armata"
+            android:text="Other"
+            android:textAlignment="textStart" />
+
+        <EditText
+            android:id="@+id/otherser"
+            android:layout_width="200dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/ser2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-111dp"
+            android:layout_toEndOf="@+id/ser3"
+            android:background="@drawable/custom_long_input"
+            android:textAlignment="center"
+            android:inputType="textLongMessage|textPersonName"
+            android:shadowColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/ser2"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Sorting Algorithms:"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <CheckBox
+            android:id="@+id/sor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView22"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="214dp"
+            android:fontFamily="@font/armata"
+            android:text="Built-in Sorting Algorithm"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+            android:id="@+id/sor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sor1"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="214dp"
+            android:fontFamily="@font/armata"
+            android:text="Self-written Sorting Algorithm"
+            android:textAlignment="textStart" />
+
+
+        <CheckBox
+            android:id="@+id/sor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView22"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/sor1"
+            android:fontFamily="@font/armata"
+            android:text="Other"
+            android:textAlignment="textStart" />
+
+        <EditText
+            android:id="@+id/othersor"
+            android:layout_width="200dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView22"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/sor3"
+            android:textAlignment="center"
+            android:background="@drawable/custom_long_input"
+
+            android:inputType="textLongMessage|textPersonName"
+            android:shadowColor="@color/blue" />
+
+        <LinearLayout
+            android:id="@+id/AlgList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sor2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/algRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AlgList"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/plusAlg"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/algRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/semipurple" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/plusAlg"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Impact On Individuals"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/IndiList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/indiRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IndiList"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/plusindi"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/indiRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:tint="@color/semipurple"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/plusindi"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Impact On Society"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/socList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView14"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/socRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/socList"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/plusSoc"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/socRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:tint="@color/semipurple"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/plusSoc"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Impact On Organizations"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/orgList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView15"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/orgRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orgList"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/plusOrg"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/orgRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:tint="@color/semipurple"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/plusOrg"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/armata"
+            android:text="Refrences"
+            android:textAlignment="textStart"
+            android:textColor="@color/semipurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/refList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView19"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/refRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/refList"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/plusRef"
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_below="@+id/refRV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="497dp"
+            app:tint="@color/semipurple"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+        <Button
+            android:id="@+id/nextToAbbrev"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusRef"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="475dp"
+            android:layout_marginBottom="109dp"
+            android:backgroundTint="@color/lightblue"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/helpObjectivess"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="228dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowObjectivess"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="248dp"
+            android:layout_marginTop="215dp"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textObjectivess"
+            android:layout_width="651dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="218dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:visibility="gone"
+            android:text="Project objectives are what you plan to achieve by the end of your project.Your project objectives should be attainable, time-bound, specific goals you can measure at the end of your project."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpNeedss"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/projectObjectives"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+        <ImageView
+            android:id="@+id/arrowNeedss"
+            android:layout_width="45dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="253dp"
+            android:layout_marginTop="467dp"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+        <TextView
+            android:id="@+id/textNeedss"
+            android:layout_width="651dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="278dp"
+            android:layout_marginTop="473dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:shadowRadius="10"
+            android:text="List the needs of your project one by one. What are the issues/problems your project going to address"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/helpOutputs"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusneeds"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowOutputs"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusneeds"
+            android:layout_marginLeft="253dp"
+            android:layout_marginTop="4dp"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textOutputs"
+            android:layout_width="651dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusneeds"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="2dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="List the outputs/outcomes of your software project one by one. What is the user able to do with your app?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpFeaturess"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/un9"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowFeaturess"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/un9"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="6dp"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textFeaturess"
+            android:layout_width="502dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/un9"
+            android:layout_marginLeft="227dp"
+            android:layout_marginTop="14dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="List the features/functionalities of your application one by one."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/helpAPIs"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusmember"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowAPIs"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusmember"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textAPIs"
+            android:layout_width="651dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusmember"
+            android:layout_marginLeft="147dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="API lets a developer make a specific “call” or “request” in order to send or receive information. List the name and the link of the APIs that will be used in your application one by one."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpAlgos"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusAPI"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowAlgos"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusAPI"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="-2dp"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textAlgos"
+            android:layout_width="651dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusAPI"
+            android:layout_marginLeft="207dp"
+            android:layout_marginTop="-3dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:maxWidth="400dp"
+            android:maxHeight="250dp"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="Select the searching and sorting algorithms used in your app. If they are not listed, select OTHER and then type the name of the algorithm. You can click on the PLUS icon to add more algorithms."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/helpInds"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusAlg"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowInds"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusAlg"
+            android:layout_marginLeft="281dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textInds"
+            android:layout_width="546dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusAlg"
+            android:layout_marginLeft="308dp"
+            android:layout_marginTop="13dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="How will your project benefit individuals, and improve their lives. List them in points"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpSocs"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusindi"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowSocs"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusindi"
+            android:layout_marginLeft="251dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textSocs"
+            android:layout_width="668dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusindi"
+            android:layout_marginLeft="278dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="How will your project benefit the society, and help your society grow and evolve. List them in points"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/helpOrgs"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/plusSoc"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/ic_baseline_help_outline_24" />
+
+        <ImageView
+            android:id="@+id/arrowOrgs"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/plusSoc"
+            android:layout_marginLeft="308dp"
+            android:layout_marginTop="3dp"
+            android:alpha="0.6"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textOrgs"
+            android:layout_width="670dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusSoc"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="11dp"
+            android:alpha="0.6"
+            android:background="@color/lightblue"
+            android:padding="10dp"
+            android:shadowRadius="10"
+            android:text="How will your project benefit businesses and organizations, and improve the market. List them in points"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

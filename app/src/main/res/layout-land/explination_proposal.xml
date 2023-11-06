@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ex1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="275dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/armata"
+        android:text="Name:"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/abbName"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="275dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/abbName"
+        android:fontFamily="@font/armata"
+        android:text="Explination:"
+        android:textAlignment="textStart"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/exp"
+        android:layout_width="863dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint=" Explination"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:shadowColor="@color/blue" />
+
+    <ImageView
+        android:id="@+id/deleteexp"
+        android:layout_width="33dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/exp"
+        android:layout_alignEnd="@+id/exp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="-51dp"
+        android:layout_marginBottom="115dp"
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        app:tint="@color/lightblue" />
+
+
+</RelativeLayout>

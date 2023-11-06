@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="10"
+    android:background="@drawable/backgroundtwo"
+    tools:context=".CreatorMain">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="#222020" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="235dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="292dp"
+        android:layout_toEndOf="@+id/profilePicCMain"
+        android:fontFamily="@font/armata"
+        android:text="Document Type"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="24dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePicCMain"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/profile" />
+
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePicCMain"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="30dp"
+        android:background="#A4B7DD"
+        android:drawableStart="@drawable/ic_baseline_home_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/darkblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Home"
+        android:textAlignment="viewStart"
+        android:textColor="@color/darkblue"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:id="@+id/sponsors"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:drawableStart="@drawable/ic_baseline_groups_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Sponsors"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/proposalstatus"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sponsors"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:drawableStart="@drawable/ic_baseline_library_books_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Proposals' Status"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/noti"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proposalstatus"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:drawableStart="@drawable/ic_baseline_notifications_active_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/lightblue"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Notifications"
+        android:textAlignment="viewStart"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/creatorLogoutBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-1dp"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_baseline_subdirectory_arrow_right_24"
+        android:drawablePadding="7dp"
+        android:drawableTint="@color/semipurple"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:text="Logout"
+        android:textColor="@color/semipurple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/toProposal"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/noti"
+        android:padding="5dp"
+        android:text="Proposal"
+        android:textColor="@color/darkblue"
+        app:icon="@drawable/ic_baseline_add_24"
+
+        app:iconTint="@color/darkblue"
+        app:strokeColor="@color/darkblue"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/toVision"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/toProposal"
+        android:padding="5dp"
+        android:text="Vision"
+        android:textColor="@color/semipurple"
+        android:textSize="14dp"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconTint="@color/semipurple"
+        app:strokeColor="@color/semipurple"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/toSRS"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/toVision"
+        android:padding="5dp"
+        android:text="SRS"
+        android:textColor="@color/blue"
+        android:textSize="14dp"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconTint="@color/blue"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/toFull"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/toSRS"
+        android:padding="5dp"
+        android:text="Full"
+        android:textColor="@color/lightblue"
+        android:textSize="14dp"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconTint="@color/lightblue"
+        app:strokeColor="@color/lightblue"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toVision"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="403dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="326dp"
+        android:layout_toEndOf="@+id/profilePicCMain"
+        android:fontFamily="@font/armata"
+        android:text="Documents"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/docRV"
+        android:layout_width="771dp"
+        android:layout_height="558dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/noti" />
+
+</RelativeLayout>

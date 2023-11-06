@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/needed"
+        android:layout_width="857dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/custom_long_input"
+        android:elevation="8dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Project Need"
+        android:padding="15dp"
+        android:inputType="textMultiLine"
+        android:shadowColor="@color/blue"/>
+
+    <ImageView
+        android:id="@+id/deleteneed"
+        android:layout_width="33dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/needed"
+        android:layout_marginStart="-60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="-104dp"
+        android:layout_toEndOf="@+id/needed"
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        app:tint="@color/lightblue" />
+
+
+</RelativeLayout>

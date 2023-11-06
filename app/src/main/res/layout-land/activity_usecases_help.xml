@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".UsecasesHelp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="1023dp"
+        android:layout_height="8000dp">
+
+
+        <TextView
+            android:id="@+id/uchtitle"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/blue"
+            android:fontFamily="@font/armata"
+            android:paddingTop="20dp"
+            android:text="USECASE DIAGRAM EXPLAINED"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/uchbackarrow"
+            android:layout_width="51dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="14dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/uchdefinetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uchtitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="77dp"
+            android:text="UseCase Diagram Definition"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/uchdefinedef"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchdefinetitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:text="Use case diagram is a behavioral UML diagram type and frequently used to analyze various systems. They enable you to visualize the different types of roles in a system and how those roles interact with the system."
+            android:textSize="23dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/uchimportitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uchdefinedef"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="UseCase Diagram Importance"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/uchimportext1"
+            android:layout_width="583dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchimportitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> To identify functions and how roles interact with them"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/uchimportext2"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchimportext1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> For a high-level view of the system You can highlight the roles that interact with the system and the functionality of the system without going deep into the system."
+            android:textSize="23dp"
+
+            />
+
+        <TextView
+            android:id="@+id/uchimportext3"
+            android:layout_width="583dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchimportext2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> To identify internal and external factors"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/uchobjtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uchimportext3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="UseCase Diagram Objects"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/uchobjtext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchobjtitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:text="Use case diagrams consist of 4 objects. Actors, Usecases, System, Package"
+            android:textSize="23dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <ImageView
+            android:id="@+id/objstable"
+            android:layout_width="909dp"
+            android:layout_height="808dp"
+            android:layout_below="@+id/uchobjtext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/objstable" />
+
+
+        <TextView
+            android:id="@+id/uchguidetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/objstable"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="UseCase Diagram Guidelines"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/uchguidetext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchguidetitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:text="There are a few guidelines and conventions when writing usecase diagrams for each object"
+            android:textSize="23dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <ImageView
+            android:id="@+id/uchimageguide"
+            android:layout_width="901dp"
+            android:layout_height="607dp"
+            android:layout_below="@id/uchguidetext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="38dp"
+            android:lineSpacingMultiplier="1.2"
+            android:src="@drawable/guide"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/uchtitlerelationships"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchimageguide"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/blue"
+            android:fontFamily="@font/armata"
+            android:text="USECASE DIAGRAM RELATIONSHIPS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:padding="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/uchrelationtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uchtitlerelationships"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="Usecase Diagram Types of Relationships"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/uchrelation1"
+            android:layout_width="901dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchrelationtitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="1- Association between actor and use case: This one is straightforward and present in every use case diagram. An actor must be associated with at least one use case.
+An actor can be associated with multiple use cases.
+Multiple actors can be associated with a single use case."
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/uchrelation1pic"
+            android:layout_width="559dp"
+            android:layout_height="311dp"
+            android:layout_below="@id/uchrelation1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="232dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/relation1" />
+
+        <TextView
+            android:id="@+id/uchrelation2"
+            android:layout_width="901dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchrelation1pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="2- Generalization of an actor: Generalization of an actor means that one actor can inherit the role of the other actor. The descendant inherits all the use cases of the ancestor. The descendant has one or more use cases that are specific to that role."
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/uchrelation2pic"
+            android:layout_width="559dp"
+            android:layout_height="311dp"
+            android:layout_below="@id/uchrelation2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="232dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/relation2" />
+
+        <TextView
+            android:id="@+id/uchrelation3"
+            android:layout_width="901dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchrelation2pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="3- Extend between two use cases: The extending use case is dependent on the extended (base) use case, The extending use case is usually optional and can be triggered conditionally,The extended (base) use case must be meaningful on its own This means it should be independent and must not rely on the behavior of the extending use case."
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/uchrelation3pic"
+            android:layout_width="559dp"
+            android:layout_height="311dp"
+            android:layout_below="@id/uchrelation3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="232dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/relation3" />
+
+        <TextView
+            android:id="@+id/uchrelation4"
+            android:layout_width="901dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchrelation3pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:text="4- Include between two use cases:  show that the behavior of the included use case is part of the including (base) use case. The main reason for this is to reuse common actions across multiple use cases. In some situations, this is done to simplify complex behaviors. consider that The base use case is incomplete without the included use case and
+The included use case is mandatory and not optional."
+            android:textSize="24dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <ImageView
+            android:id="@+id/uchrelation4pic"
+            android:layout_width="wrap_content"
+            android:layout_height="444dp"
+            android:layout_below="@id/uchrelation4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="232dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/relation4" />
+
+        <TextView
+            android:id="@+id/uchrelation5"
+            android:layout_width="901dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchrelation4pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:text="5- Generalization of a use case:  The behavior of the ancestor is inherited by the descendant. This is used when there is common behavior between two use cases and also specialized behavior specific to each use case."
+            android:textSize="24dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <ImageView
+            android:id="@+id/uchrelation5pic"
+            android:layout_width="559dp"
+            android:layout_height="444dp"
+            android:layout_below="@id/uchrelation5"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="232dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/relation5" />
+
+        <TextView
+            android:id="@+id/uchrelationlinestitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uchrelation5pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="Rules of drawing Relationships"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/uchlinespic"
+            android:layout_width="678dp"
+            android:layout_height="481dp"
+            android:layout_below="@id/uchrelationlinestitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/lines" />
+
+        <TextView
+            android:id="@+id/uchtitlehowto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchlinespic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/blue"
+            android:fontFamily="@font/armata"
+            android:padding="5dp"
+            android:text="HOW TO DRAW A USECASE DIAGRAM"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/uchmainhowto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uchtitlehowto"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="How to Create a UseCase Diagram"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/uchhowtoactortitle"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchmainhowto"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> Identifying Actors"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/uchhowtoactortext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchhowtoactortitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="21dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Actors are external entities that interact with your system. It can be a person, another system or an organization. In a banking system, the most obvious actor is the customer. Other actors can be bank employee or cashier depending on the role you’re trying to show in the use case."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/uchhowtouctitle"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchhowtoactortext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> Identifying Use Cases"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/uchhowtouctext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchhowtouctitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="21dp"
+            android:text="Now it’s time to identify the use cases. A good way to do this is to identify what the actors need from the system. In a banking system, a customer will need to open accounts, deposit and withdraw funds, request check books and similar functions. So all of these can be considered as use cases.
+
+Top level use cases should always provide a complete function required by an actor. You can extend or include use cases depending on the complexity of the system.
+
+Once you identify the actors and the top level use case you have a basic idea of the system. Now you can fine tune it and add extra layers of detail to it."
+            android:textSize="23dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/uchhowtofunctitle"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchhowtouctext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> Look for Common Functionality to use Include"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/uchhowtofunctext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchhowtofunctitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="21dp"
+            android:text="Look for common functionality that can be reused across the system. If you find two or more use cases that share common functionality you can extract the common functions and add it to a separate use case. Then you can connect it via the include relationship to show that it’s always called when the original use case is executed."
+            android:textSize="23dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+
+        <TextView
+            android:id="@+id/uchhowtogenertitle"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchhowtofunctext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> Is it Possible to Generalize Actors and Use Cases"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/uchhowtogenertext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchhowtogenertitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="21dp"
+            android:text="There may be instances where actors are associated with similar use cases while triggering a few use cases unique only to them. In such instances, you can generalize the actor to show the inheritance of functions. You can do a similar thing for use case as well."
+            android:textSize="23dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+
+        <TextView
+            android:id="@+id/uchhowtoextendtitle"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchhowtogenertext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> Optional Functions or Additional Functions"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/uchhowtoextendtext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uchhowtoextendtitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="21dp"
+            android:text="There are some functions that are triggered optionally. In such cases, you can use the extend relationship and attach an extension rule to it.
+Extend doesn’t always mean it’s optional. Sometimes the use case connected by extending can supplement the base use case. The thing to remember is that the base use case should be able to perform a function on its own even if the extending use case is not called."
+            android:textSize="23dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <ImageView
+            android:id="@+id/uchexamplepic"
+            android:layout_width="694dp"
+            android:layout_height="730dp"
+            android:layout_below="@id/uchhowtoextendtext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/ucexample"
+            android:layout_marginBottom="22dp"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

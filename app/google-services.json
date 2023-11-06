@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "121624499269",
+    "project_id": "docanddeal-41fd8",
+    "storage_bucket": "docanddeal-41fd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121624499269:android:929e9f59d05f97318dff2c",
+        "android_client_info": {
+          "package_name": "com.example.docanddeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121624499269-5eh7huk8nf6imrc5qn9u30mqivl8en9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByntRGzR4pLKBAsfEatkr92pfyJTCPWWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121624499269-5eh7huk8nf6imrc5qn9u30mqivl8en9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

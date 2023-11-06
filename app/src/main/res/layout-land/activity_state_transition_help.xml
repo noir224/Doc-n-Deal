@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".StateTransitionHelp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="1023dp"
+        android:layout_height="3200dp">
+
+
+        <TextView
+            android:id="@+id/sthtitle"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/blue"
+            android:fontFamily="@font/armata"
+            android:paddingTop="20dp"
+            android:text="STATE TRANSITION DIAGRAM EXPLAINED"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sthbackarrow"
+            android:layout_width="51dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="14dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/sthdefinetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sthtitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="77dp"
+            android:text="State Transition Diagram Definition"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/sthdefinedef"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthdefinetitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="State-transition diagrams describe all of the states that an object can have, the events under which an object changes state (transitions), the conditions that must be fulfilled before the transition will occur (guards), and the activities undertaken during the life of an object (actions)."
+            android:textSize="23dp" />
+
+
+        <TextView
+            android:id="@+id/sthimportitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sthdefinedef"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="State Transition Diagram Importance"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sthimportext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthimportitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text=" State-transition diagrams are very useful for describing the behavior of individual objects over the full set of use cases that affect those objects. State-transition diagrams are not useful for describing the collaboration between objects that cause the transitions."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/sthpointattext"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthimportext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="The UML notation for state-transition diagrams is shown below:"
+            android:textSize="23dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            />
+
+
+        <ImageView
+            android:id="@+id/sthexplainpic"
+            android:layout_width="647dp"
+            android:layout_height="462dp"
+            android:layout_below="@+id/sthpointattext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="201dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/statetransitiondef"
+            />
+        <TextView
+            android:id="@+id/sthnotationtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sthexplainpic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="State Transition Notations"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sthnotation1"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthnotationtitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> State: A condition during the life of an object in which it satisfies some condition, performs some action, or waits for some event."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/sthnotation2"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthnotation1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Event: An occurrence that may trigger a state transition. Event types include an explicit signal from outside the system, an invocation from inside the system, the passage of a designated period of time, or a designated condition becoming true."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/sthnotation3"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthnotation2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Guard/Condition : A boolean expression which, When event occurs, condition must be true for transition to occur"
+            android:textSize="23dp" />
+        <TextView
+            android:id="@+id/sthnotation4"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthnotation3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Transition: The change of state within an object."
+            android:textSize="23dp" />
+        <TextView
+            android:id="@+id/sthnotation5"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthnotation4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> Action: One or more actions taken by an object in response to a state change."
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/sthtitlehowto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthnotation5"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/blue"
+            android:fontFamily="@font/armata"
+            android:padding="5dp"
+            android:text="HOW TO DRAW A STATE TRANSITION DIAGRAM"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sthmainhowto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sthtitlehowto"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="How to Create a State Transition Diagram"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sthhowtotitle"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthmainhowto"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="35dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Important rules to consider"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/sthhowtotext1"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthhowtotitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="19dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="> States represented as rounded boxes and they represent screens"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/sthhowtotext2"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthhowtotext1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> Transitions and actions are represented as arcs"
+            android:textSize="24dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/sthhowtotext3"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthhowtotext2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> An Event has no duration"
+            android:textSize="24dp"
+            android:lineSpacingMultiplier="1.2"/>
+        <TextView
+            android:id="@+id/sthhowtotext4"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthhowtotext3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> An Action is optional"
+            android:textSize="24dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/sthhowtotext5"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthhowtotext4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="26dp"
+            android:text="> There are two types of actions, Exit and Entry Actions,
+Entry action are executed on entry into state,
+Exit action are executed on exit from state
+"
+            android:textSize="24dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/sthhowtotitle2"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthhowtotext5"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="36dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Start Drawing the diagram"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/sthtext1"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthhowtotitle2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="19dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="1- First we start with the inital state, The initial state represents the first state in the process. It appears as a dark circle with an arrow leading from it. ⚫→"
+            android:textSize="24dp" />
+        <TextView
+            android:id="@+id/sthtext2"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthtext1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="19dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="2- Second, we identify possible States/Screens"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/sthtext3"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthtext2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="19dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="3- Third, identify events occuring and actions taken and connect the states through them in a logical sequence of occurrence"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/sthtext4"
+            android:layout_width="908dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sthtext3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="19dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="4- Forth, after drawing your states and transitions, end the diagram with the Final State (or terminator state)
+it is a state that represents the object’s state at the end of the system. It appears as an arrow pointing to a filled circle nested inside another circle line."
+            android:textSize="24dp" />
+
+
+        <TextView
+            android:id="@+id/sthexampletitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sthtext4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="64dp"
+            android:text="Example of a State Transition Diagram"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sthexamplepic"
+            android:layout_width="924dp"
+            android:layout_height="361dp"
+            android:layout_below="@+id/sthexampletitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/tansitionexample" />
+
+
+    </RelativeLayout>
+</ScrollView>
